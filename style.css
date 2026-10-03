@@ -1,0 +1,373 @@
+/* ============================================
+   Natural Disasters — kid-friendly theme
+   ============================================ */
+
+:root {
+  --accent: #2e9e44;
+  --accent-dark: #1e6e30;
+  --accent-soft: #e7f7ea;
+  --hero-1: #34c759;
+  --hero-2: #1e8e3e;
+  --ink: #2d3a45;
+  --ink-soft: #5d6f7b;
+  --paper: #fdf9f0;
+  --card: #ffffff;
+  --line: #efe6d8;
+}
+
+/* Each disaster type gets its own bright colour scheme */
+body[data-part="volcano"] {
+  --accent: #e0441f; --accent-dark: #a52c10; --accent-soft: #ffe9e2;
+  --hero-1: #ff7b33; --hero-2: #d92b0e; --paper: #fff7f2;
+}
+body[data-part="earthquake"] {
+  --accent: #64748b; --accent-dark: #42506a; --accent-soft: #e6ebf2;
+  --hero-1: #94a3b8; --hero-2: #475569; --paper: #f6f8fb;
+}
+body[data-part="tsunami"] {
+  --accent: #1283d8; --accent-dark: #0b5a96; --accent-soft: #e0f1fd;
+  --hero-1: #2ec5ff; --hero-2: #0f6cc0; --paper: #f2faff;
+}
+body[data-part="hurricane"] {
+  --accent: #0d9488; --accent-dark: #0a6459; --accent-soft: #dbf5f0;
+  --hero-1: #2dd4bf; --hero-2: #0f766e; --paper: #f0fdfa;
+}
+body[data-part="tornado"] {
+  --accent: #7c3aed; --accent-dark: #5b21b6; --accent-soft: #ede9fe;
+  --hero-1: #a78bfa; --hero-2: #6d28d9; --paper: #faf7ff;
+}
+body[data-part="flood"] {
+  --accent: #1d4ed8; --accent-dark: #1e3a8a; --accent-soft: #dbeafe;
+  --hero-1: #60a5fa; --hero-2: #1d4ed8; --paper: #f2f7ff;
+}
+body[data-part="wildfire"] {
+  --accent: #dc2626; --accent-dark: #991b1b; --accent-soft: #fee2e2;
+  --hero-1: #fb923c; --hero-2: #b91c1c; --paper: #fff6f2;
+}
+body[data-part="drought"] {
+  --accent: #d97706; --accent-dark: #92400e; --accent-soft: #fef3c7;
+  --hero-1: #fbbf24; --hero-2: #b45309; --paper: #fffaf0;
+}
+body[data-part="avalanche"] {
+  --accent: #0284c7; --accent-dark: #075985; --accent-soft: #e0f2fe;
+  --hero-1: #7dd3fc; --hero-2: #0369a1; --paper: #f0f9ff;
+}
+body[data-part="mudslide"] {
+  --accent: #8a5a2b; --accent-dark: #61401c; --accent-soft: #f7ecdd;
+  --hero-1: #c98a3d; --hero-2: #7d5320; --paper: #fdf8ef;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+h1, h2, h3, .logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.part-nav a, .page-turn a {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+}
+
+.container { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- Header & navigation ---------- */
+
+.site-header {
+  background: #2b3a47;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.site-nav a {
+  color: #dbe5ec;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.site-nav a:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
+.site-nav a.active { background: var(--accent); color: #fff; }
+
+/* ---------- Hero banner ---------- */
+
+.hero {
+  background: linear-gradient(130deg, var(--hero-1), var(--hero-2));
+  color: #fff;
+  padding: 54px 0 60px;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero h1 { margin: 0 0 12px; font-size: 2.6rem; font-weight: 700; }
+.hero p  { margin: 0 auto; max-width: 660px; font-size: 1.15rem; font-weight: 600; opacity: 0.95; }
+
+/* ---------- Slide sub-navigation ---------- */
+
+.part-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 10px;
+}
+
+.part-nav a {
+  text-decoration: none;
+  color: var(--accent-dark);
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.part-nav a:hover { transform: translateY(-2px); }
+
+.part-nav a.here {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---------- Content blocks ---------- */
+
+main { padding-bottom: 50px; }
+
+h2 {
+  color: var(--accent-dark);
+  margin-top: 42px;
+  font-size: 1.5rem;
+}
+
+h3 { color: var(--accent-dark); }
+
+.intro { font-size: 1.12rem; font-weight: 600; }
+
+/* ---------- Picture cards with captions ---------- */
+
+.picture-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.picture-row.single {
+  grid-template-columns: minmax(280px, 420px);
+  justify-content: center;
+}
+
+figure.picture {
+  margin: 0;
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
+  border: 3px solid var(--accent-soft);
+  transition: transform 0.15s;
+}
+
+figure.picture:hover { transform: translateY(-4px); }
+
+figure.picture img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  background: #e8e0d4;
+}
+
+figure.picture.single img { height: 240px; }
+
+figure.picture figcaption {
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.photo-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 2px 12px;
+  margin-bottom: 6px;
+}
+
+figcaption a { color: var(--accent); font-weight: 700; }
+
+/* ---------- Picture sources box ---------- */
+
+.sources {
+  background: #fff;
+  border: 3px dashed var(--accent);
+  border-radius: 18px;
+  padding: 20px 26px;
+  margin: 40px 0 10px;
+}
+
+.sources h2 { margin-top: 0; }
+
+.sources li { margin-bottom: 10px; font-size: 0.95rem; }
+
+.sources a { color: var(--accent); word-break: break-all; }
+
+/* ---------- Fun fact box ---------- */
+
+.fun-fact {
+  background: #fff6d9;
+  border: 3px solid #f5c518;
+  border-radius: 18px;
+  padding: 18px 22px;
+  margin: 32px 0;
+  font-size: 1.02rem;
+}
+
+.fun-fact strong { color: #a07500; }
+
+/* ---------- Prev / next buttons ---------- */
+
+.page-turn {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 46px;
+  flex-wrap: wrap;
+}
+
+.page-turn a {
+  text-decoration: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 0 var(--accent-dark);
+  transition: transform 0.1s;
+}
+
+.page-turn a:hover { transform: translateY(-2px); }
+
+.page-turn a.ghost {
+  background: #fff;
+  color: var(--accent-dark);
+  border: 2px solid var(--accent);
+  box-shadow: none;
+}
+
+/* ---------- Home page disaster cards ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 26px;
+  margin: 36px 0;
+}
+
+.part-card {
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s;
+}
+
+.part-card:hover { transform: translateY(-5px); }
+
+.part-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.part-card .card-body { padding: 20px 22px 24px; }
+
+.part-card h3 { margin-top: 0; font-size: 1.35rem; }
+
+.part-card ul { padding-left: 22px; margin-bottom: 0; font-weight: 700; }
+
+.part-card a { color: inherit; }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: #2b3a47;
+  color: #b9c7d1;
+  text-align: center;
+  padding: 26px 16px;
+  font-size: 0.92rem;
+  margin-top: 40px;
+}
+
+.site-footer a { color: #7cc6ff; }
+
+@media (max-width: 560px) {
+  .hero h1 { font-size: 1.9rem; }
+  figure.picture img { height: 170px; }
+  .hero { border-radius: 0 0 26px 26px; }
+}
+
+/* ---------- Printing: looks like a kids' news article ---------- */
+
+@media print {
+  .site-header, .part-nav, .page-turn { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  .hero {
+    border-radius: 0;
+    padding: 14px 0;
+    background: none;
+    color: var(--ink);
+    border-bottom: 4px double var(--accent);
+  }
+  figure.picture { box-shadow: none; break-inside: avoid; }
+  figure.picture img { height: auto; max-height: 200px; }
+  .picture-row { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .sources { break-inside: avoid; }
+  .site-footer { background: none; color: #555; }
+}
