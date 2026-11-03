@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9: Probabilistic Seismic Hazard and Risk — Earthquakes (Advanced)</title>
+<meta name="description" content="Fault mechanics, seismic waves, magnitude and moment, earthquake statistics, seismic hazard and engineering.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html" class="active">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Earthquakes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Earthquakes</a> › Lesson 9</p>
+    <h1>Probabilistic Seismic Hazard and Risk</h1>
+    <p class="kicker">Lesson 9 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Plate Tectonics and the Seismic Cycle">1</a><a href="lesson-2.html" title="Lesson 2: Stress, Friction and Fault Mechanics">2</a><a href="lesson-3.html" title="Lesson 3: Seismic Waves, Earth Structure and Seismometry">3</a><a href="lesson-4.html" title="Lesson 4: Locating Earthquakes and Source Mechanisms">4</a><a href="lesson-5.html" title="Lesson 5: Magnitude, Seismic Moment and Energy">5</a><a href="lesson-6.html" title="Lesson 6: Earthquake Statistics, Aftershocks and Forecasting">6</a><a href="lesson-7.html" title="Lesson 7: Strong Ground Motion, Site Effects and Intensity">7</a><a href="lesson-8.html" title="Lesson 8: Liquefaction, Landslides and Other Collateral Hazards">8</a><a href="lesson-9.html" class="here" aria-current="page" title="Lesson 9: Probabilistic Seismic Hazard and Risk">9</a><a href="lesson-10.html" title="Lesson 10: Earthquake Engineering, Early Warning and Risk Reduction">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">λ(IM &gt; x) = Σ<sub>i</sub> ν<sub>i</sub> ∫∫ P(IM &gt; x | m, r) f<sub>M</sub>(m) f<sub>R</sub>(r) dm dr ;   P(t) = 1 − e<sup>−λt</sup></pre></div>
+<h3>The Cornell–McGuire framework</h3>
+<p>Probabilistic seismic hazard analysis (PSHA), introduced by Cornell (1968) and implemented in widely used codes by McGuire, integrates over every possible earthquake. Each seismic source i, whether a fault or an areal zone, has an annual rate ν<sub>i</sub> of events above a minimum magnitude. A magnitude distribution f<sub>M</sub>, usually truncated Gutenberg–Richter or characteristic, and a source-to-site distance distribution f<sub>R</sub> describe its earthquakes. A ground-motion model supplies the conditional probability that the intensity measure exceeds x, including its aleatory scatter. The result is a hazard curve, the annual rate of exceeding each level of PGA or spectral acceleration. Under the Poisson assumption, a probability of exceedance P in an exposure time t corresponds to a return period T = −t/ln(1 − P). The conventional design levels of 10 % and 2 % in 50 years correspond to return periods of about 475 and 2,475 years.</p>
+<h3>Uncertainty, logic trees and deaggregation</h3>
+<p>Aleatory variability, the inherent randomness such as ground-motion scatter, is integrated within each hazard calculation. Epistemic uncertainty, meaning incomplete knowledge of models and parameters such as M<sub>max</sub>, recurrence models, GMM choice and fault segmentation, is represented by logic trees. Each alternative model is assigned a weight, producing a distribution of hazard curves that is reported as a mean and fractiles. Deaggregation decomposes the hazard at a given return period into contributions by magnitude, distance and ε, identifying the controlling earthquakes. These are used to select records for dynamic analysis, through the conditional mean spectrum. Large modern models include the US National Seismic Hazard Model (updated in 2018 and 2023), the 2020 European Seismic Hazard Model (ESHM20), Japan's J-SHIS maps and the Global Earthquake Model (GEM) global hazard and risk mosaics.</p>
+<h3>Critiques and testing</h3>
+<p>PSHA has been criticised. Some deterministic scenario-based advocates argue that its integration over many unlikely events hides the worst credible case. Others note that several recent destructive earthquakes, such as Wenchuan 2008, Christchurch 2011 and Tōhoku 2011, produced shaking well beyond mapped values at those sites (Stein, Geller and Liu, 2012). The counter-argument is that a probabilistic map is expected to be exceeded somewhere, and that the right test is the statistical consistency of many sites over time. Precarious rocks and other fragile geological features provide an independent upper limit on ground motions over thousands of years, and have been used to reject some high-hazard branches of logic trees.</p>
+<h3>From hazard to risk</h3>
+<p>Risk combines hazard with exposure and vulnerability. Fragility functions give the probability of reaching or exceeding a damage state as a lognormal function of an intensity measure: P(DS ≥ ds | IM = x) = Φ[ln(x/θ)/β], with median θ and dispersion β typically 0.4–0.8. Loss models such as FEMA's Hazus, the FEMA P-58 performance-based methodology and GEM's OpenQuake convolve hazard curves with fragility and consequence functions to estimate annualised losses, casualties and downtime. These estimates feed insurance and catastrophe bonds, parametric cover such as the Caribbean Catastrophe Risk Insurance Facility (CCRIF) and the Turkish Catastrophe Insurance Pool (TCIP), and cost–benefit analysis of retrofit programmes.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Show that &quot;10 % in 50 years&quot; and &quot;2 % in 50 years&quot; correspond to return periods of about 475 and 2,475 years.</div></li><li><span class="mk">(b)</span><div>A site's hazard curve gives an annual exceedance rate of 0.002 for PGA = 0.4 g. What is the probability that 0.4 g is exceeded during a 50-year building life?</div></li><li><span class="mk">(c)</span><div>A building type has a collapse fragility with median 1.5 g (in spectral acceleration) and β = 0.6. What is the probability of collapse given a spectral acceleration of 0.75 g? (Φ(−1.155) ≈ 0.124.)</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) T = −50/ln(0.90) = 50/0.1054 ≈ 474.6 yr, and T = −50/ln(0.98) = 50/0.0202 ≈ 2,475 yr. (b) P = 1 − e<sup>−0.002 × 50</sup> = 1 − e<sup>−0.1</sup> ≈ 0.095, or about 9.5 %. (c) ln(0.75/1.5)/0.6 = −0.693/0.6 ≈ −1.155, so P ≈ 0.12, or about 12 %.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-8.html">← Lesson 8</a><a class="btn" href="lesson-10.html">Lesson 10 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4: Propagation Modelling and Travel-Time Maps — Tsunamis (Advanced)</title>
+<meta name="description" content="Long-wave physics, sources, propagation, run-up, detection, warning and risk reduction for tsunamis.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html" class="active">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tsunamis/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tsunamis</a> › Lesson 4</p>
+    <h1>Propagation Modelling and Travel-Time Maps</h1>
+    <p class="kicker">Lesson 4 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Long-Wave Theory and Tsunami Speed">1</a><a href="lesson-2.html" title="Lesson 2: Earthquake Generation and Seafloor Deformation">2</a><a href="lesson-3.html" title="Lesson 3: Tsunami Earthquakes and Non-Seismic Sources">3</a><a href="lesson-4.html" class="here" aria-current="page" title="Lesson 4: Propagation Modelling and Travel-Time Maps">4</a><a href="lesson-5.html" title="Lesson 5: Shoaling, Refraction and Resonance">5</a><a href="lesson-6.html" title="Lesson 6: Run-Up, Inundation and Forces on Structures">6</a><a href="lesson-7.html" title="Lesson 7: Magnitude, Intensity and Probabilistic Hazard">7</a><a href="lesson-8.html" title="Lesson 8: Detection, Forecasting and Warning Centres">8</a><a href="lesson-9.html" title="Lesson 9: Risk Reduction, Evacuation and Coastal Engineering">9</a><a href="lesson-10.html" title="Lesson 10: Paleotsunamis and Open Research Questions">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Travel time T = ∫ ds / √(g h(s)) along the fastest ray path; amplitude follows energy beaming by source and bathymetry</pre></div>
+<h3>Travel-time maps</h3>
+<p>Because tsunami speed depends only on depth, travel times can be computed from bathymetry alone before any event occurs. Travel time along a path is the integral of slowness, and the arrival of the wavefront at each point is found by solving the eikonal equation |∇T| = 1/c(x, y) with Huygens-type wavefront construction or fast-marching algorithms. Travel-time maps, drawn as isochrons of hours from a source, are among the oldest and most useful products of warning centres: they tell coastal officials how long they have, and they are robust because they do not depend on knowing the source magnitude. They predict the arrival of the first motion, not of the largest wave, which may arrive hours later.</p>
+<h3>Numerical propagation models</h3>
+<p>Operational and research models solve the linear or nonlinear shallow-water equations, sometimes with dispersive Boussinesq corrections, on nested grids that refine from arc-minute resolution in the open ocean to tens of metres or less at the coast. Widely used codes include MOST (Method of Splitting Tsunami, NOAA), TUNAMI (Tohoku University), COMCOT (Cornell), GeoClaw (adaptive mesh refinement finite-volume, University of Washington), and dispersive models such as FUNWAVE-TVD and NHWAVE. Finite-volume schemes handle shocks (bores) and the moving wet–dry boundary at the shoreline robustly. Accuracy depends above all on the source model and on the bathymetry and topography: high-resolution coastal elevation models with sub-metre vertical accuracy are needed for inundation, and errors in nearshore bathymetry translate directly into errors in arrival time and amplitude.</p>
+<h3>Energy beaming and maximum-amplitude maps</h3>
+<p>The energy radiated from a source is not distributed uniformly. Beyond source directivity, mid-ocean ridges, seamount chains and continental margins act as waveguides because waves refract towards shallower water, where they travel more slowly. Maps of maximum modelled amplitude show these effects vividly: after the 2011 Tōhoku earthquake, energy was channelled along the Emperor Seamounts and East Pacific ridges towards the Americas. Late-arriving waves trapped on continental shelves as edge waves, or scattered from distant features, can cause the largest amplitudes many hours after first arrival; on the US West Coast in 2011 and in Chile in 1960, the largest waves arrived hours after the first.</p>
+<h3>Far-field geometrical spreading</h3>
+<p>For an isotropic point source over uniform depth, energy conservation in a radially spreading wave gives amplitude decay A ∝ r<sup>-1/2</sup>. On a sphere, the wavefront converges again at the antipode, and amplitudes are partially refocused there; the 1960 Chile tsunami was strongly focused near Japan, roughly 17,000 km away, where it killed about 140 people almost a day after the earthquake.</p>
+<h3>Inverse problems</h3>
+<p>Tsunami waveforms recorded at tide gauges and pressure sensors can be inverted for the slip distribution on the fault, complementing seismic and geodetic data. Because tsunami propagation is linear in the deep ocean, Green's functions for unit sources can be precomputed and combined linearly. Tsunami data are particularly sensitive to shallow slip near the trench, which onshore GNSS cannot resolve; joint inversions for the 2004, 2010 Chile and 2011 Tōhoku earthquakes have shown that the largest slip was located at shallow depth, closer to the trench than older models assumed.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>The great-circle distance from the 1960 Chile source region to Hilo, Hawaii is roughly 10,600 km. Assuming an average depth of 4,000 m, estimate the travel time and compare it with the observed arrival of about 15 hours.</div></li><li><span class="mk">(b)</span><div>A coastal town lies behind 200 km of shelf with mean depth 100 m, beyond which lie 1,000 km of ocean at 4,000 m depth from the source. Estimate the travel time and identify which part of the path dominates.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) T = 10.6 × 10<sup>6</sup> m / 198 m/s ≈ 53,500 s ≈ 14.9 h, in good agreement with the observed arrival of roughly 15 hours. (b) Ocean leg: 1.0 × 10<sup>6</sup> / 198 ≈ 5,050 s (1.4 h). Shelf leg: c = √(9.81 × 100) ≈ 31.3 m/s, so 2.0 × 10<sup>5</sup> / 31.3 ≈ 6,390 s (1.8 h). Total ≈ 11,400 s ≈ 3.2 h. The shelf, only 17 % of the distance, takes more than half of the travel time, which is why accurate shelf bathymetry is critical for arrival forecasts.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-3.html">← Lesson 3</a><a class="btn" href="lesson-5.html">Lesson 5 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4: Fireline Intensity, Flame Length and Crown Fire — Wildfires (Advanced)</title>
+<meta name="description" content="Combustion, fuels and spread models, fire weather and danger rating, pyroconvection, the WUI, satellites and smoke.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html" class="active">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Wildfires/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Wildfires</a> › Lesson 4</p>
+    <h1>Fireline Intensity, Flame Length and Crown Fire</h1>
+    <p class="kicker">Lesson 4 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Combustion and Heat Transfer">1</a><a href="lesson-2.html" title="Lesson 2: Wildland Fuels and Fuel Moisture">2</a><a href="lesson-3.html" title="Lesson 3: Rate of Spread Models">3</a><a href="lesson-4.html" class="here" aria-current="page" title="Lesson 4: Fireline Intensity, Flame Length and Crown Fire">4</a><a href="lesson-5.html" title="Lesson 5: Fire Weather and Topography">5</a><a href="lesson-6.html" title="Lesson 6: Fire Danger Rating Systems">6</a><a href="lesson-7.html" title="Lesson 7: Extreme Fire Behaviour, Pyroconvection and Spotting">7</a><a href="lesson-8.html" title="Lesson 8: The Wildland–Urban Interface and Structure Ignition">8</a><a href="lesson-9.html" title="Lesson 9: Detection, Mapping and Remote Sensing">9</a><a href="lesson-10.html" title="Lesson 10: Fire Regimes, Management, Climate Change and Smoke">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">I = H w R     L = 0.0775 I<sup>0.46</sup>     (I in kW/m, L in m)</pre></div>
+<h3>Byram's fireline intensity</h3>
+<p>In 1959 George Byram defined fireline intensity as the rate of heat release per unit length of the fire front,</p>
+<pre class="math">I = H w R</pre>
+<p>with H the heat yield (kJ/kg), w the mass of fuel consumed in the flaming front (kg/m²) and R the forward rate of spread (m/s). The units are kW/m. Fireline intensity is the single most useful descriptor of a fire's suppression difficulty and of its effects on vegetation. It spans more than five orders of magnitude, from below 10 kW/m in a creeping backing fire in litter to more than 100,000 kW/m in the most violent crown fires.</p>
+<p>Byram related intensity to the observable flame length L (the distance from the base of the flame to its tip, measured along the flame axis). In SI units his relation is</p>
+<pre class="math">L = 0.0775 I<sup>0.46</sup></pre>
+<p>Other correlations exist (for example Thomas's L ∝ I<sup>2/3</sup>), and flame length is notoriously hard to estimate in the field, but Byram's form is embedded in US operational practice.</p>
+<h3>Interpreting intensity for suppression</h3>
+<p>Andrews and Rothermel's fire characteristics chart and associated guidance translate intensity into tactical limits:</p>
+<pre class="math">Intensity (kW/m)     Flame length (m)    Interpretation
+&lt; 350                &lt; 1.2               Direct attack at head and flanks with hand tools
+350–1,700            1.2–2.4             Too intense for hand crews; equipment and aircraft
+1,700–3,500          2.4–3.4             Serious control problems; torching, crowning, spotting
+&gt; 3,500              &gt; 3.4               Control efforts at the head likely ineffective</pre>
+<p>Australian and Canadian guidance is similar: fires above about 4,000 kW/m are generally beyond direct attack by any means, and fires above about 10,000 kW/m typically develop into fully active crown fires in forests, with massive spotting.</p>
+<h3>Crown fire initiation and spread</h3>
+<p>A surface fire transitions to a crown fire when its flames and hot gases reach and ignite the canopy. Van Wagner (1977) derived a criterion for the surface fireline intensity required to initiate crowning,</p>
+<pre class="math">I<sub>0</sub> = (0.010 CBH (460 + 25.9 FMC))<sup>1.5</sup></pre>
+<p>with CBH in metres and the foliar moisture content FMC in percent. Torching of individual trees (passive crown fire) can then occur. Sustained active crown fire, in which flames move through the canopy in step with the surface fire, requires a minimum rate of spread for the crown layer to maintain a sufficient mass flow rate of fuel into the flame zone:</p>
+<pre class="math">R<sub>0</sub> = 3.0 / CBD     (R in m/min, CBD in kg/m³)</pre>
+<p>Crown fires in boreal and western North American conifer forests commonly spread at 15–100 m/min with intensities of 10,000–100,000 kW/m. Reducing surface fuels, raising canopy base height by pruning and thinning, and reducing canopy bulk density are the physical rationale for fuel treatments intended to keep fires on the ground.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A fire consumes 1.0 kg/m² of fuel with heat yield 18,000 kJ/kg and spreads at 0.5 m/s. Compute its fireline intensity and flame length, and interpret it.</div></li><li><span class="mk">(b)</span><div>Compute Van Wagner's critical intensity for crown fire initiation for CBH = 4 m and FMC = 100 %, and for CBH = 2 m.</div></li><li><span class="mk">(c)</span><div>What minimum spread rate is required for active crowning when CBD = 0.15 kg/m³?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) I = 18,000 × 1.0 × 0.5 = 9,000 kW/m; L = 0.0775 × 9,000<sup>0.46</sup> ≈ 5.1 m. This is far beyond the 3,500 kW/m threshold: suppression at the head is ineffective and crowning and spotting are likely. (b) For CBH = 4 m: 0.010 × 4 × (460 + 2,590) = 122; I<sub>0</sub> = 122<sup>1.5</sup> ≈ 1,350 kW/m. For CBH = 2 m: 61<sup>1.5</sup> ≈ 476 kW/m. Halving canopy base height lowers the threshold by a factor of 2<sup>1.5</sup> ≈ 2.8. (c) R<sub>0</sub> = 3.0/0.15 = 20 m/min (1.2 km/h).</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-3.html">← Lesson 3</a><a class="btn" href="lesson-5.html">Lesson 5 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

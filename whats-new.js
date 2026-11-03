@@ -18,14 +18,25 @@
   "name": "Natural Disasters",
   "emoji": "🌍",
   "accent": "#ff9f43",
-  "version": "V.1.5",
-  "previous": "V.1.4",
+  "version": "V.1.6",
+  "previous": "V.1.5",
   "date": "2 November 2026",
-  "lead": "Earth's wildest events just got an update!",
+  "lead": "Big update: a whole new Adult Mode!",
   "changes": [
-    "NEW!!! This What's New pop-up: every update now tells you what changed"
+    "NEW!!! Adult Mode: press \"Switch to adult mode\" at the top right of any page",
+    "All 10 hazards rewritten as graduate-level courses: the physics, measurement, forecasting and risk reduction",
+    "10 technical lessons per hazard with worked exercises, plus detailed case studies of major historical disasters",
+    "References for further reading in every course",
+    "A calm, compact Arial design for grown-up readers, with new scientific pictures",
+    "Kid Mode is still the default, and you can switch back any time"
   ],
   "earlier": [
+    {
+      "version": "V.1.5",
+      "items": [
+        "NEW!!! This What's New pop-up: every update now tells you what changed"
+      ]
+    },
     {
       "version": "V.1.4",
       "items": [
@@ -35,12 +46,12 @@
     }
   ],
   "fun": [
-    "10 kinds of natural disasters: avalanches, droughts, earthquakes, floods, hurricanes, mudslides, tornadoes, tsunamis, volcanoes and wildfires",
-    "Each one has 3 slides: Facts & History, Pictures, and Famous Disasters",
-    "Every photo comes from Wikimedia Commons, with a Picture Sources section"
+    "The adult edition has 100 lessons and about 80 case studies",
+    "Adult pictures include satellite images, radar scans and a DART tsunami buoy diagram",
+    "Each adult course is roughly ten times longer than the kid pages"
   ],
-  "funTitle": "What's inside",
-  "tip": "Open the Famous Disasters slide for the most amazing true stories.",
+  "funTitle": "Fun facts",
+  "tip": "Kids: start in Kid Mode. Adults and advanced students: switch to Adult Mode for the technical courses.",
   "button": "Explore! ▶"
 };
   try {
@@ -73,8 +84,8 @@
     "padding:22px 22px 16px;animation:pop .35s cubic-bezier(.2,1.4,.4,1)}" +
     ".body{overflow:auto;min-height:0;flex:1 1 auto;margin-right:-8px;padding-right:8px;scrollbar-color:ACCENT88 transparent}" +
     ".foot-bar{flex:0 0 auto;padding-top:4px}" +
-    ".x{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:0;cursor:pointer;" +
-    "background:rgba(255,255,255,.08);color:#fff;font:700 18px/36px system-ui,sans-serif}" +
+    ".x{position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;border-radius:50%;border:0;cursor:pointer;" +
+    "background:#262e4a;color:#fff;font:700 18px/36px system-ui,sans-serif}" +
     ".x:hover,.x:focus-visible{background:rgba(255,255,255,.18);outline:2px solid ACCENT}" +
     ".new{display:inline-block;font:900 13px/1 system-ui,sans-serif;letter-spacing:2px;color:#111;" +
     "background:linear-gradient(90deg,#ffe066,ACCENT,#ffe066);background-size:200% 100%;" +
@@ -141,6 +152,16 @@
         // closed with a key: swallow that key's keyup too, then step aside for good
         if (e.type === "keyup") unguard();
       } else if (e.type === "keydown" && (e.key === "Escape" || e.key === "Esc")) { e.preventDefault(); close(true); }
+      else if (e.type === "keydown" && e.key === "Tab") {
+        // keep focus inside the pop-up: Tab / Shift+Tab cycle between ✕ and the big button
+        e.preventDefault();
+        var x = root.querySelector(".x"), go = root.querySelector(".go"), cur = root.activeElement;
+        try { (cur === go ? (e.shiftKey ? x : x) : (e.shiftKey ? go : go)).focus({ preventScroll: true }); } catch (er) { /* fine */ }
+      } else if (e.type === "keydown" && document.activeElement !== host && !(e.ctrlKey || e.metaKey || e.altKey)) {
+        // focus somehow left the pop-up: don't let the key type into the page behind it
+        e.preventDefault();
+        try { root.querySelector(".go").focus({ preventScroll: true }); } catch (er) { /* fine */ }
+      }
       e.stopImmediatePropagation();
       e.stopPropagation();
     }

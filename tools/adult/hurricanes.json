@@ -1,0 +1,15 @@
+{
+  "blurb": "Tropical cyclone genesis, heat-engine thermodynamics, vortex dynamics, storm surge, forecasting, climate and risk.",
+  "pics": [
+    { "img": "img/adult/hurricanes-1.jpg", "alt": "World map with thousands of tropical cyclone tracks drawn as coloured dotted lines across the tropical oceans",
+      "caption": "Tracks of all tropical cyclones worldwide from 1985 to 2005, plotted at six-hourly positions and coloured by Saffir–Simpson intensity. The western North Pacific is the most active basin, and the South Atlantic and south-east Pacific are almost empty.",
+      "title": "Global tropical cyclone tracks-edit2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Global_tropical_cyclone_tracks-edit2.jpg",
+      "license": "Public domain", "artist": "Nilfanion (background image: NASA)" },
+    { "img": "img/adult/hurricanes-2.png", "alt": "Cut-away diagram of a Northern Hemisphere tropical cyclone showing the eye, eyewall, rainbands, rising and sinking air, and the outflow cirrus shield",
+      "caption": "Schematic cut-away of a Northern Hemisphere tropical cyclone. Air spirals inward and rises in the eyewall and rainbands, flows out beneath the cirrus shield at upper levels, and sinks in the eye.",
+      "title": "Hurricane-en.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:Hurricane-en.svg",
+      "license": "CC BY 3.0", "artist": "Kelvinsong" }
+  ]
+}

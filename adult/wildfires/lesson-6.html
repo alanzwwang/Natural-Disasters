@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 6: Fire Danger Rating Systems — Wildfires (Advanced)</title>
+<meta name="description" content="Combustion, fuels and spread models, fire weather and danger rating, pyroconvection, the WUI, satellites and smoke.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html" class="active">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Wildfires/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Wildfires</a> › Lesson 6</p>
+    <h1>Fire Danger Rating Systems</h1>
+    <p class="kicker">Lesson 6 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Combustion and Heat Transfer">1</a><a href="lesson-2.html" title="Lesson 2: Wildland Fuels and Fuel Moisture">2</a><a href="lesson-3.html" title="Lesson 3: Rate of Spread Models">3</a><a href="lesson-4.html" title="Lesson 4: Fireline Intensity, Flame Length and Crown Fire">4</a><a href="lesson-5.html" title="Lesson 5: Fire Weather and Topography">5</a><a href="lesson-6.html" class="here" aria-current="page" title="Lesson 6: Fire Danger Rating Systems">6</a><a href="lesson-7.html" title="Lesson 7: Extreme Fire Behaviour, Pyroconvection and Spotting">7</a><a href="lesson-8.html" title="Lesson 8: The Wildland–Urban Interface and Structure Ignition">8</a><a href="lesson-9.html" title="Lesson 9: Detection, Mapping and Remote Sensing">9</a><a href="lesson-10.html" title="Lesson 10: Fire Regimes, Management, Climate Change and Smoke">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Fire danger indices convert weather and fuel moisture into an expected difficulty of control, not a prediction of any single fire</pre></div>
+<h3>Purpose and structure</h3>
+<p>Fire danger rating systems are used to set readiness levels, declare total fire bans, pre-position resources and warn the public. They are empirical frameworks built on decades of experimental fires and calibrated to regional fuels. The three most influential are the Canadian Forest Fire Danger Rating System, Australia's McArthur meters and their successor, and the US National Fire Danger Rating System.</p>
+<h3>The Canadian Forest Fire Weather Index System</h3>
+<p>The Canadian Fire Weather Index (FWI) System, documented by Van Wagner (1987), is the most widely used fire danger system worldwide and underpins the European EFFIS service and many climate studies. From daily noon temperature, relative humidity, 10-m wind speed and 24-h rainfall it tracks three moisture codes representing fuel layers with different drying rates: the Fine Fuel Moisture Code (FFMC, surface litter, timelag about two-thirds of a day), the Duff Moisture Code (DMC, loosely compacted organic layers, about 15 days) and the Drought Code (DC, deep compact organic matter, about 52 days). These combine into the Initial Spread Index (ISI, from FFMC and wind), the Buildup Index (BUI, from DMC and DC), and finally the FWI, a dimensionless measure of potential fireline intensity. The FFMC is converted to a fine fuel moisture content and the ISI computed as</p>
+<pre class="math">m = 147.2 (101 − FFMC) / (59.5 + FFMC)
+ISI = 0.208 f(W) f(F),   f(W) = e<sup>0.05039 W</sup>,   f(F) = 91.9 e<sup>−0.1386 m</sup> (1 + m<sup>5.31</sup>/(4.93 × 10⁷))</pre>
+<p>with W in km/h. An FWI above about 30 is high to extreme in most Canadian forests; values above 50 occur in the most severe events.</p>
+<h3>McArthur's Forest Fire Danger Index and the AFDRS</h3>
+<p>A. G. McArthur of the Australian Forestry and Timber Bureau developed fire danger meters in the 1960s; Noble, Bary and Gill (1980) fitted them with equations. The Forest Fire Danger Index is</p>
+<pre class="math">FFDI = 2 exp(−0.450 + 0.987 ln D − 0.0345 H + 0.0338 T + 0.0234 V)</pre>
+<p>where D is a drought factor (0–10), H relative humidity (%), T air temperature (°C) and V the 10-m wind speed (km/h). McArthur scaled the index so that 100 corresponded to the worst conditions he knew, those of Black Friday, 13 January 1939, in Victoria. On Black Saturday in 2009 FFDI exceeded 100 at many locations, and afterwards a new &quot;Catastrophic&quot; (in Victoria &quot;Code Red&quot;) category was introduced for FFDI ≥ 100. In September 2022 Australia replaced the McArthur-based ratings nationally with the Australian Fire Danger Rating System (AFDRS), which uses eight fuel-specific fire behaviour models and four public warning levels: Moderate, High, Extreme and Catastrophic.</p>
+<h3>The US National Fire Danger Rating System</h3>
+<p>The US NFDRS, first implemented in 1972 and revised in 1978, 1988 and 2016, uses fuel models and the Rothermel equations to compute indices including the Spread Component, the Energy Release Component (ERC, a measure of the potential available energy in the flaming zone strongly linked to heavier fuel and live fuel moisture), the Ignition Component, and the Burning Index (BI, proportional to ten times the predicted flame length in feet). The 2016 version replaced the earlier moisture models with the Nelson dead fuel moisture model and a growing-season-index model for live fuels. Seasonal ERC percentiles are widely used by managers to judge how a season compares with climatology.</p>
+<h3>Limitations</h3>
+<p>Indices are not fire behaviour predictions. They assume standard fuels and flat terrain, use point weather observations, and say nothing about ignitions or the wildland–urban interface. Extreme events are often driven by processes the indices do not represent, such as pyroconvection, mid-level dryness or wind changes. Research on the Hot-Dry-Windy Index (Srock and colleagues, 2018), which uses the near-surface layer of a weather model, and on probabilistic and machine-learning approaches, aims to fill some of these gaps.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Compute the FFDI for T = 45 °C, H = 8 %, V = 60 km/h and D = 10, and compare it with a mild day of T = 25 °C, H = 40 %, V = 20 km/h, D = 8.</div></li><li><span class="mk">(b)</span><div>Compute the FFMC-derived fine fuel moisture content and the ISI for FFMC = 92 with winds of 20 km/h and 40 km/h.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) Extreme day: exponent = −0.450 + 0.987 × ln 10 − 0.0345 × 8 + 0.0338 × 45 + 0.0234 × 60 = −0.450 + 2.273 − 0.276 + 1.521 + 1.404 = 4.472, so FFDI = 2 e<sup>4.472</sup> ≈ 175, deep in the Catastrophic range. Mild day: exponent = −0.450 + 2.052 − 1.380 + 0.845 + 0.468 = 1.535, FFDI ≈ 9.3 (low to moderate). (b) m = 147.2 × 9/151.5 ≈ 8.7 %. Then f(F) ≈ 91.9 × e<sup>−1.212</sup> × 1.002 ≈ 27.4; for W = 20 km/h, ISI = 0.208 × e<sup>1.008</sup> × 27.4 ≈ 15.6; for W = 40 km/h, ISI ≈ 0.208 × e<sup>2.016</sup> × 27.4 ≈ 42.8. Doubling wind speed nearly triples the expected rate of spread, because the wind function is exponential.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-5.html">← Lesson 5</a><a class="btn" href="lesson-7.html">Lesson 7 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

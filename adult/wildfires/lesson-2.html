@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2: Wildland Fuels and Fuel Moisture — Wildfires (Advanced)</title>
+<meta name="description" content="Combustion, fuels and spread models, fire weather and danger rating, pyroconvection, the WUI, satellites and smoke.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html" class="active">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Wildfires/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Wildfires</a> › Lesson 2</p>
+    <h1>Wildland Fuels and Fuel Moisture</h1>
+    <p class="kicker">Lesson 2 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Combustion and Heat Transfer">1</a><a href="lesson-2.html" class="here" aria-current="page" title="Lesson 2: Wildland Fuels and Fuel Moisture">2</a><a href="lesson-3.html" title="Lesson 3: Rate of Spread Models">3</a><a href="lesson-4.html" title="Lesson 4: Fireline Intensity, Flame Length and Crown Fire">4</a><a href="lesson-5.html" title="Lesson 5: Fire Weather and Topography">5</a><a href="lesson-6.html" title="Lesson 6: Fire Danger Rating Systems">6</a><a href="lesson-7.html" title="Lesson 7: Extreme Fire Behaviour, Pyroconvection and Spotting">7</a><a href="lesson-8.html" title="Lesson 8: The Wildland–Urban Interface and Structure Ignition">8</a><a href="lesson-9.html" title="Lesson 9: Detection, Mapping and Remote Sensing">9</a><a href="lesson-10.html" title="Lesson 10: Fire Regimes, Management, Climate Change and Smoke">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Fire behaviour depends on how much fuel there is, how finely divided and tightly packed it is, and above all how wet it is</pre></div>
+<h3>Fuel loading, particle size and packing</h3>
+<p>Wildland fuels are porous arrays of particles: grass blades, needles, leaves, twigs, branches, logs, bark and decomposing litter and duff. Fire scientists describe them with a few physical properties. Fuel loading w is the oven-dry mass per unit ground area, given in kg/m² or tonnes per hectare (1 kg/m² = 10 t/ha); fine fuel loadings range from about 0.1–0.5 kg/m² in grasslands to 1–2 kg/m² or more in eucalypt forest litter and elevated shrubs, while total loadings in heavy logging slash or old-growth conifer forest can exceed 10 kg/m². The surface-area-to-volume ratio σ measures particle fineness; for cylinders σ = 4/d, so a 1 mm grass blade has σ ≈ 4,000 m⁻¹ while a 10 cm log has σ ≈ 40 m⁻¹. Fine particles heat quickly, dry quickly and burn almost completely in the flaming front, which is why the fine fraction controls the rate of spread.</p>
+<p>The packing ratio β = ρ<sub>b</sub>/ρ<sub>p</sub> is the fraction of the fuel bed volume occupied by fuel, where ρ<sub>b</sub> is the bulk density of the bed and ρ<sub>p</sub> the particle density (typically about 500 kg/m³ for wood). Typical β values are of order 0.001–0.05. Too loose a bed and particles are too far apart to heat each other; too tight and oxygen cannot reach the reaction zone. Rothermel found an optimum packing ratio that decreases with increasing fineness, β<sub>op</sub> = 3.348 σ<sup>−0.8189</sup> (σ in ft⁻¹).</p>
+<h3>Fuel strata and continuity</h3>
+<p>Fuels are stratified into ground fuels (duff, peat, roots), surface fuels (litter, grass, shrubs and downed woody debris), ladder fuels (small trees, shrubs and bark that connect the surface to the canopy) and canopy fuels. Canopy fuels are characterised by canopy base height (CBH, the height of the lowest continuous canopy fuel), canopy bulk density (CBD, kg/m³ of fine foliage within the crown layer, typically 0.05–0.3 kg/m³ in conifer forests) and foliar moisture content. Horizontal continuity matters as much as quantity: breaks in fuel continuity, such as roads, rock, recent burns and irrigated land, are the anchor points of control lines.</p>
+<h3>Dead fuel moisture and timelag classes</h3>
+<p>Dead fuel moisture content (FMC, mass of water as a percentage of oven-dry mass) responds to the atmosphere by absorption and desorption of water vapour, by wetting from rain and dew, and by solar heating. In a constant environment it approaches an equilibrium moisture content (EMC) set mainly by relative humidity and temperature; EMC is roughly 2–5 % at relative humidity below 10 %, about 10 % near 50 % relative humidity and approaches the fibre saturation point (around 30–35 %) near saturation. The approach to equilibrium is approximately exponential,</p>
+<pre class="math">M(t) = M<sub>e</sub> + (M<sub>0</sub> − M<sub>e</sub>) e<sup>−t/τ</sup></pre>
+<p>where τ is the timelag, the time required to cover 1 − 1/e ≈ 63 % of the difference between the initial and equilibrium moisture. Because τ scales with particle size, US fire danger practice groups dead fuels into four standard timelag classes:</p>
+<pre class="math">Class       Diameter               Response time
+1-hour      &lt; 0.64 cm (¼ in)       hours (fine litter, grass)
+10-hour     0.64–2.5 cm            about a day
+100-hour    2.5–7.6 cm             days
+1000-hour   7.6–20 cm              weeks to a season</pre>
+<p>Fine fuels track the diurnal cycle of humidity almost exactly, reaching their driest in mid-afternoon, which is why so many destructive runs occur between about 13:00 and 18:00 local time. The 1000-hour class and duff integrate weeks to months of weather and are good indicators of seasonal drought and of how much heavy fuel will burn once ignited.</p>
+<h3>Live fuel moisture</h3>
+<p>Living foliage holds water under physiological control. Live fuel moisture in new spring growth can exceed 200–250 %, falling during the dry season to 60–80 % in drought-stressed chaparral and sagebrush. Values below roughly 60–80 % in Californian chaparral are widely associated with large fire growth. Conifer foliar moisture usually lies between about 80 % and 130 %, with a seasonal minimum in spring (the &quot;spring dip&quot; related to carbohydrate changes) that has been linked to enhanced crown fire activity in boreal forests.</p>
+<h3>Moisture of extinction and fuel models</h3>
+<p>Each fuel type has a moisture of extinction M<sub>x</sub>, above which a fire will not spread with a sustained flame front. For dead fuels M<sub>x</sub> ranges from about 12–15 % in fine grass to 25–40 % in some shrub and litter types. To make fire models usable in practice, fuels are summarised as standard fuel models: Anderson (1982) described the 13 original models used with the Rothermel model (grass models 1–3, shrub models 4–7, timber litter 8–10 and logging slash 11–13), and Scott and Burgan (2005) added a set of 40 models including dynamic grass and shrub models in which live herbaceous fuel cures and transfers to the dead class. Canada's Fire Behaviour Prediction (FBP) System uses 16 empirically calibrated fuel types such as C-2 (boreal spruce) and O-1 (grass), and Australian systems use vegetation-specific models such as the Dry Eucalypt Forest Fire Model (Project Vesta).</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A 10-hour fuel stick is at 20 % moisture when humidity drops abruptly; the new equilibrium moisture content is 6 %. Estimate its moisture after 10 h and after 20 h.</div></li><li><span class="mk">(b)</span><div>A 1-hour fuel under the same change: what is its moisture after 3 h?</div></li><li><span class="mk">(c)</span><div>A grass blade has a diameter of 0.5 mm. What is its surface-area-to-volume ratio?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) M(10 h) = 6 + 14 e<sup>−1</sup> = 6 + 5.15 ≈ 11.2 %; M(20 h) = 6 + 14 e<sup>−2</sup> ≈ 7.9 %. (b) M(3 h) = 6 + 14 e<sup>−3</sup> ≈ 6.7 %, essentially at equilibrium. (c) σ = 4/d = 4/(5 × 10⁻⁴ m) = 8,000 m⁻¹ (about 2,440 ft⁻¹), typical of fine grasses.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-1.html">← Lesson 1</a><a class="btn" href="lesson-3.html">Lesson 3 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

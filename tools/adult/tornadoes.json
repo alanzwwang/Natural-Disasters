@@ -1,0 +1,15 @@
+{
+  "blurb": "Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.",
+  "pics": [
+    { "img": "img/adult/tornadoes-1.png", "alt": "NEXRAD reflectivity image of a supercell with a hook echo near Mayfield, Kentucky, and a thin debris spike extending south",
+      "caption": "Reflectivity from the Paducah WSR-88D (KPAH) on 10 December 2021, showing the hook echo and debris ball of the Western Kentucky tornado as it approached Mayfield. The narrow streak extending south from the debris ball is a debris spike, a radar artefact caused by scattering from the dense debris cloud.",
+      "title": "Radar of the Quad-State Supercell prior to impacting Mayfield, Kentucky.png",
+      "page": "https://commons.wikimedia.org/wiki/File:Radar_of_the_Quad-State_Supercell_prior_to_impacting_Mayfield,_Kentucky.png",
+      "license": "Public domain", "artist": "National Weather Service" },
+    { "img": "img/adult/tornadoes-2.jpg", "alt": "Satellite image of Tuscaloosa, Alabama, with a light-brown tornado damage track running southwest to northeast across the city",
+      "caption": "The damage track of the 27 April 2011 Tuscaloosa–Birmingham EF4 tornado, seen as a pale brown swath crossing Tuscaloosa from lower left to upper right. Imaged by the Advanced Land Imager on NASA's EO-1 satellite on 4 May 2011.",
+      "title": "Tuscaloosa–Birmingham tornado — Aerial of damage in Tuscaloosa.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Tuscaloosa%E2%80%93Birmingham_tornado_%E2%80%94_Aerial_of_damage_in_Tuscaloosa.jpg",
+      "license": "Public domain", "artist": "NASA Earth Observatory (Jesse Allen and Robert Simmon)" }
+  ]
+}

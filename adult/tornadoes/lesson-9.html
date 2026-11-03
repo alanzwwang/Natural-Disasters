@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9: Forecasting, Watches and Warnings — Tornadoes (Advanced)</title>
+<meta name="description" content="Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html" class="active">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tornadoes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tornadoes</a> › Lesson 9</p>
+    <h1>Forecasting, Watches and Warnings</h1>
+    <p class="kicker">Lesson 9 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Convective Instability and Thunderstorm Types">1</a><a href="lesson-2.html" title="Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity">2</a><a href="lesson-3.html" title="Lesson 3: Supercell Dynamics">3</a><a href="lesson-4.html" title="Lesson 4: Tornadogenesis — Theories and Open Questions">4</a><a href="lesson-5.html" title="Lesson 5: Non-Supercell Tornadoes">5</a><a href="lesson-6.html" title="Lesson 6: Tornado Vortex Dynamics and Wind Profiles">6</a><a href="lesson-7.html" title="Lesson 7: The Fujita and Enhanced Fujita Scales">7</a><a href="lesson-8.html" title="Lesson 8: Radar Observation of Tornadoes">8</a><a href="lesson-9.html" class="here" aria-current="page" title="Lesson 9: Forecasting, Watches and Warnings">9</a><a href="lesson-10.html" title="Lesson 10: Climatology, Trends, Vulnerability and Engineering">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">STP = (mlCAPE/1500) × ((2000 − mlLCL)/1000) × (ESRH/150) × (EBWD/20) × ((200 + mlCIN)/150)</pre></div>
+<h3>Ingredients-based forecasting</h3>
+<p>Modern tornado forecasting combines the ingredients of deep convection (instability, moisture, lift) with those of supercells (deep-layer shear) and of tornadic supercells (strong low-level shear and SRH, low LCL, limited CIN, and storm mode favouring discrete or semi-discrete cells). Proximity-sounding studies (e.g. Rasmussen and Blanchard, 1998; Thompson et al., 2003) established that significant (EF2+) tornadoes are most strongly associated with 0–1 km SRH and low LCL heights (below about 1,000 m), in the presence of sufficient CAPE and 0–6 km bulk shear above about 20 m/s. Convective mode is a critical additional factor: the same environment produces many more significant tornadoes if storms are discrete than if they quickly grow upscale into lines.</p>
+<h3>Composite parameters</h3>
+<p>Composite parameters condense these ingredients into dimensionless numbers. The fixed-layer Significant Tornado Parameter (Thompson et al., 2003) is</p>
+<pre class="math">STP = (sbCAPE/1500 J/kg) × ((2000 − sbLCL)/1000 m) × (SRH<sub>0–1km</sub>/150 m²/s²) × (BWD<sub>0–6km</sub>/20 m/s)</pre>
+<p>with the LCL term set to 1 when LCL &lt; 1,000 m and to 0 when LCL &gt; 2,000 m, and the shear term set to 0 below 12.5 m/s and capped at 1.5 above 30 m/s. The effective-layer version (Thompson et al., 2012; shown in the key-idea line) uses mixed-layer parcels, effective-layer SRH and bulk shear, and a CIN term (set to 1 when mlCIN &gt; −50 J/kg). The Supercell Composite Parameter (Thompson et al., 2004) is</p>
+<pre class="math">SCP = (muCAPE/1000) × (ESRH/50) × (EBWD/20)</pre>
+<p>with the EBWD term set to 0 below 10 m/s and capped at 1 above 20 m/s. Values of STP above 1 indicate an environment increasingly supportive of significant tornadoes in the presence of supercells; most violent tornadoes occur with STP above 3–4. These parameters are diagnostic of environment only — they say nothing about whether storms will form, and they are frequently misapplied when storms are elevated or when convective mode is linear.</p>
+<h3>Numerical guidance and the outlook-watch-warning chain</h3>
+<p>Convection-allowing models with grid spacing of about 3 km (e.g. HRRR, NAM 3 km, the High-Resolution Ensemble Forecast) explicitly simulate storms and provide &quot;surrogate severe&quot; fields such as updraft helicity, the vertical integral of w ζ over 2–5 km (or 0–3 km), whose extremes indicate simulated rotating storms. The NOAA Storm Prediction Center (SPC) issues convective outlooks up to 8 days ahead, with Day 1–2 probabilistic tornado forecasts (2, 5, 10, 15, 30, 45 and 60% within 25 miles of a point) and hatched areas for significant tornadoes; mesoscale discussions; and tornado watches, typically valid for 4–8 hours over tens of thousands of square kilometres, sometimes labelled &quot;particularly dangerous situation&quot; (PDS). Local NWS forecast offices issue tornado warnings for storm-based polygons (since October 2007), based on radar, spotter and public reports, now often with impact-based tags (&quot;considerable&quot; damage threat) and, for confirmed large tornadoes threatening populated areas, a tornado emergency — first used by the NWS in Norman, Oklahoma, on 3 May 1999.</p>
+<h3>Warning performance</h3>
+<p>Warning skill is measured with a 2 × 2 contingency table of hits (H), misses (M) and false alarms (F):</p>
+<pre class="math">POD = H / (H + M);   FAR = F / (H + F);   CSI = H / (H + M + F)</pre>
+<p>From the mid-1980s to the early 2010s the NWS increased the probability of detection of tornadoes to roughly 0.7–0.75 and the mean lead time (with unwarned tornadoes counted as zero) to around 13–14 minutes, while the false alarm ratio stayed near 0.75. Since about 2012, efforts to reduce false alarms have lowered FAR modestly at the cost of lower POD and lead time (Brooks and Correia, 2018). Performance is markedly worse for QLCS, tropical-cyclone and nocturnal tornadoes, and for weak tornadoes generally. The NOAA Warn-on-Forecast programme aims to extend lead times to tens of minutes or more through rapidly updating, radar-assimilating, convection-allowing ensembles (the WoFS system), and the FACETs paradigm envisages continuously updated probabilistic hazard information rather than binary warnings.</p>
+<h3>Social and behavioural dimensions</h3>
+<p>A warning is effective only if it is received, understood, believed and acted upon. Research on Joplin 2011 and other events shows that many people seek confirmation (visual, social media, sirens) before sheltering, that repeated false alarms can reduce response, and that nocturnal tornadoes, mobile homes, language barriers and lack of access to shelters drive casualties. Sirens are outdoor warning devices and are not designed to be heard indoors.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Compute the fixed-layer STP for sbCAPE = 2,500 J/kg, sbLCL = 800 m, 0–1 km SRH = 250 m²/s² and 0–6 km shear = 25 m/s.</div></li><li><span class="mk">(b)</span><div>Compute SCP for muCAPE = 3,000 J/kg, ESRH = 300 m²/s² and EBWD = 25 m/s.</div></li><li><span class="mk">(c)</span><div>In one season a forecast office records 60 warned tornadoes, 40 unwarned tornadoes and 140 warnings without a tornado. Compute POD, FAR and CSI.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) CAPE term 2,500/1,500 = 1.667; LCL term = 1 (LCL &lt; 1,000 m); SRH term 250/150 = 1.667; shear term 25/20 = 1.25. STP ≈ 1.667 × 1 × 1.667 × 1.25 ≈ 3.5 — strongly supportive of significant tornadoes if discrete supercells form. (b) SCP = 3.0 × 6.0 × 1 (capped) = 18. (c) POD = 60/100 = 0.60; FAR = 140/200 = 0.70; CSI = 60/240 = 0.25.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-8.html">← Lesson 8</a><a class="btn" href="lesson-10.html">Lesson 10 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

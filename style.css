@@ -371,3 +371,22 @@ figcaption a { color: var(--accent); font-weight: 700; }
   .sources { break-inside: avoid; }
   .site-footer { background: none; color: #555; }
 }
+
+/* ---------- Switch to adult mode (top right of the header) ---------- */
+.nav-wrap .logo { order: 1; }
+.mode-switch {
+  order: 2;
+  margin-left: auto;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.mode-switch:hover, .mode-switch:focus-visible { background: #fff; color: #1d2b3a; }
+.nav-wrap .site-nav { order: 3; width: 100%; }

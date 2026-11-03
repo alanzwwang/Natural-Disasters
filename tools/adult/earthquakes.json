@@ -1,0 +1,19 @@
+{
+  "blurb": "Fault mechanics, seismic waves, magnitude and moment, earthquake statistics, seismic hazard and engineering.",
+  "pics": [
+    { "img": "img/adult/earthquakes-1.png",
+      "alt": "World map with 358,214 earthquake epicentres from 1963 to 1998 plotted as black dots, outlining the plate boundaries",
+      "caption": "Preliminary determinations of 358,214 epicentres recorded from 1963 to 1998. The narrow bands along mid-ocean ridges and the broad belts at subduction zones and the Alpine–Himalayan collision zone trace the boundaries of the tectonic plates.",
+      "title": "Quake epicenters 1963-98.png",
+      "page": "https://commons.wikimedia.org/wiki/File:Quake_epicenters_1963-98.png",
+      "license": "Public domain",
+      "artist": "NASA, DTAM project team" },
+    { "img": "img/adult/earthquakes-2.png",
+      "alt": "Cross-section of the Earth showing curved P, S, PKP, SKS, PP and other seismic ray paths through the crust, mantle and core",
+      "caption": "Schematic seismic ray paths through the Earth's interior. P (solid) and S (dashed) waves curve as velocity increases with depth; S waves cannot cross the liquid outer core but can convert to P waves there (K) and back, producing phases such as SKS and SKP; P waves that cross the core produce PKP.",
+      "title": "Earthquake wave paths.svg",
+      "page": "https://commons.wikimedia.org/wiki/File:Earthquake_wave_paths.svg",
+      "license": "Public domain",
+      "artist": "SEWilco (after USGS)" }
+  ]
+}

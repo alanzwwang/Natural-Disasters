@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 4: Locating Earthquakes and Source Mechanisms — Earthquakes (Advanced)</title>
+<meta name="description" content="Fault mechanics, seismic waves, magnitude and moment, earthquake statistics, seismic hazard and engineering.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html" class="active">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Earthquakes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Earthquakes</a> › Lesson 4</p>
+    <h1>Locating Earthquakes and Source Mechanisms</h1>
+    <p class="kicker">Lesson 4 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Plate Tectonics and the Seismic Cycle">1</a><a href="lesson-2.html" title="Lesson 2: Stress, Friction and Fault Mechanics">2</a><a href="lesson-3.html" title="Lesson 3: Seismic Waves, Earth Structure and Seismometry">3</a><a href="lesson-4.html" class="here" aria-current="page" title="Lesson 4: Locating Earthquakes and Source Mechanisms">4</a><a href="lesson-5.html" title="Lesson 5: Magnitude, Seismic Moment and Energy">5</a><a href="lesson-6.html" title="Lesson 6: Earthquake Statistics, Aftershocks and Forecasting">6</a><a href="lesson-7.html" title="Lesson 7: Strong Ground Motion, Site Effects and Intensity">7</a><a href="lesson-8.html" title="Lesson 8: Liquefaction, Landslides and Other Collateral Hazards">8</a><a href="lesson-9.html" title="Lesson 9: Probabilistic Seismic Hazard and Risk">9</a><a href="lesson-10.html" title="Lesson 10: Earthquake Engineering, Early Warning and Risk Reduction">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">t<sub>i</sub><sup>obs</sup> = t₀ + T(x<sub>i</sub>, x₀) + ε<sub>i</sub>  →  linearise and solve  G Δm = Δt  by least squares</pre></div>
+<h3>The location problem</h3>
+<p>Four unknowns define a hypocentre: origin time t₀ and the three coordinates of x₀. For each station i, the predicted arrival time is t₀ plus the travel time T calculated through a velocity model. Geiger (1910; 1912) introduced the iterative linearised approach still in use. Starting from a trial hypocentre, one computes the residuals Δt<sub>i</sub> = t<sub>i</sub><sup>obs</sup> − t<sub>i</sub><sup>pred</sup> and the partial derivatives of T with respect to each hypocentral coordinate, then solves the overdetermined system G Δm = Δt in a least-squares sense and repeats until the solution converges. The model covariance (GᵀG)⁻¹σ² gives formal uncertainties. These usually underestimate the true error, because errors in the velocity model are systematic rather than random.</p>
+<p>Several well-known trade-offs limit precision. Depth trades off against origin time when all stations are distant, because both shift arrivals almost uniformly. Depth is therefore best constrained by a station closer than about one focal depth, or by depth phases such as pP and sP for teleseismic events. An event outside the network, with a large azimuthal gap, is poorly located along the direction of the gap. Relative-location methods such as the double-difference algorithm (Waldhauser and Ellsworth, 2000) cancel most of the effect of unmodelled velocity structure by differencing arrival times of closely spaced events at common stations, often using waveform cross-correlation. They can sharpen diffuse clouds of seismicity into well-defined fault planes with errors of tens of metres. Machine-learning phase pickers trained on millions of labelled seismograms (for example PhaseNet and EQTransformer, both published in 2019–2020) now routinely expand catalogues by a factor of 10 or more.</p>
+<h3>The Wadati diagram</h3>
+<p>For a uniform V<sub>P</sub>/V<sub>S</sub> ratio, plotting the S−P time against the P arrival time at several stations gives a straight line, because t<sub>S</sub> − t<sub>P</sub> = (V<sub>P</sub>/V<sub>S</sub> − 1)(t<sub>P</sub> − t₀). The slope gives V<sub>P</sub>/V<sub>S</sub> − 1, and the intercept on the time axis gives the origin time. Wadati introduced this diagram in the 1930s, and it remains a quick check on picks and on crustal Poisson's ratio.</p>
+<h3>Focal mechanisms and the moment tensor</h3>
+<p>The radiation pattern of a shear dislocation is a double couple. P-wave first motions are compressional in two opposite quadrants and dilatational in the other two, separated by two orthogonal nodal planes: the fault plane and the auxiliary plane. Plotting first-motion polarities on a lower-hemisphere projection produces the familiar &quot;beach ball&quot;, which gives the faulting style and the P (compression) and T (tension) axes. Seismological data alone cannot decide which nodal plane is the fault. Aftershock alignments, surface rupture, geodesy or rupture directivity resolve this ambiguity.</p>
+<p>The general point source is described by the symmetric seismic moment tensor M<sub>ij</sub>. For a shear dislocation of area A and average slip D on a fault with normal n and slip direction s, M<sub>ij</sub> = μAD(s<sub>i</sub>n<sub>j</sub> + s<sub>j</sub>n<sub>i</sub>). Since the Centroid Moment Tensor method of Dziewonski, Chou and Woodhouse (1981), long-period waveform inversion has produced moment tensors for essentially every global earthquake above about M5. The Global CMT catalogue begins in 1976. Non-double-couple components point to volcanic, geothermal or collapse sources, complex ruptures, or explosions, and are used in nuclear-test discrimination. Finite-fault inversions of seismic, geodetic and tsunami data now map slip distributions and rupture velocity within hours. Most ruptures propagate at 0.7–0.9 V<sub>S</sub>. Some strike-slip ruptures, such as Kunlun 2001 and segments of Türkiye 2023, appear to have run at supershear speeds.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Two stations record a local event. At station A, P arrives at 08:00:12.0 and S at 08:00:19.3. At station B, P arrives at 08:00:16.0 and S at 08:00:26.22. Construct the Wadati line and find V<sub>P</sub>/V<sub>S</sub> and the origin time.</div></li><li><span class="mk">(b)</span><div>Using V<sub>P</sub> = 6.0 km/s, how far is station A from the hypocentre?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) The S−P times are 7.30 s at A and 10.22 s at B. The slope is (10.22 − 7.30)/(16.0 − 12.0) = 0.73, so V<sub>P</sub>/V<sub>S</sub> = 1.73. S−P falls to zero at t<sub>P</sub> = 12.0 − 7.30/0.73 = 12.0 − 10.0 = 2.0 s, so t₀ = 08:00:02.0. Station B gives the same result: 16.0 − 10.22/0.73 = 2.0 s. (b) The P travel time is 12.0 − 2.0 = 10.0 s, so d = 10.0 × 6.0 = 60 km.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-3.html">← Lesson 3</a><a class="btn" href="lesson-5.html">Lesson 5 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

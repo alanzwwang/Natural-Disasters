@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 7: Mobility, Runout and Inundation — Landslides and Debris Flows (Advanced)</title>
+<meta name="description" content="Landslides, mudflows and debris flows: soil mechanics, triggers, flow physics, runout, monitoring and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html" class="active">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Mudslides/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Landslides and Debris Flows</a> › Lesson 7</p>
+    <h1>Mobility, Runout and Inundation</h1>
+    <p class="kicker">Lesson 7 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Classification, Anatomy and Terminology">1</a><a href="lesson-2.html" title="Lesson 2: Effective Stress and Shear Strength">2</a><a href="lesson-3.html" title="Lesson 3: Slope Stability and the Factor of Safety">3</a><a href="lesson-4.html" title="Lesson 4: Rainfall, Snowmelt and Wildfire Triggers">4</a><a href="lesson-5.html" title="Lesson 5: Seismic, Volcanic and Anthropogenic Triggers">5</a><a href="lesson-6.html" title="Lesson 6: Debris-Flow Mechanics and Rheology">6</a><a href="lesson-7.html" class="here" aria-current="page" title="Lesson 7: Mobility, Runout and Inundation">7</a><a href="lesson-8.html" title="Lesson 8: Landslide Dams and Outburst Floods">8</a><a href="lesson-9.html" title="Lesson 9: Monitoring, Forecasting and Early Warning">9</a><a href="lesson-10.html" title="Lesson 10: Susceptibility, Hazard, Risk and Mitigation">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">H/L = tan(angle of reach), which decreases as landslide volume increases</pre></div>
+<h3>The Fahrböschung</h3>
+<p>The most robust empirical measure of landslide mobility is the ratio H/L of the fall height (from the crown of the source to the tip of the deposit) to the horizontal travel distance; its arctangent is the angle of reach or Fahrböschung, introduced by Albert Heim after the 1881 Elm rock avalanche in Switzerland. A frictional block sliding on a plane with constant coefficient μ would stop at H/L = μ, so for rock (μ ≈ 0.6) we would expect H/L ≈ 0.6. Small rockfalls do behave roughly this way, but large rock avalanches travel much farther: H/L falls to 0.1–0.2 for volumes of 10<sup>8</sup>–10<sup>9</sup> m³. Scheidegger (1973) fitted</p>
+<pre class="math">log<sub>10</sub>(H/L) = −0.15666 log<sub>10</sub> V + 0.62419</pre>
+<p>for rock avalanches (V in m³), and Corominas (1996) provided separate regressions for different landslide types, showing that debris flows and earth flows are more mobile than rockfalls of the same volume and that obstacles and channel confinement modify mobility.</p>
+<h3>Why are large landslides so mobile?</h3>
+<p>The excess mobility of large rock avalanches has attracted many hypotheses: air-layer lubrication (Shreve, studying the 1964 Sherman Glacier event in Alaska), acoustic fluidisation (Melosh), frictional heating and pore-fluid vaporisation on the basal shear zone (proposed for Vajont by Voight and Faust, 1982), dynamic fragmentation, the entrainment of saturated substrate and the undrained loading of valley-floor sediments. No single mechanism explains all cases; the observation that large landslides on Mars and the Moon also show reduced H/L suggests that some mechanisms need neither water nor air. For water-rich flows the dominant control is clearer: high pore pressure maintained during motion, and entrainment of wet bed material, as described in Lesson 6. The 2014 Oso landslide (H/L of roughly 0.1–0.2 depending on how the path is defined) is an example of exceptional mobility attributed to liquefaction of wet sediment.</p>
+<h3>Volume-based inundation scaling</h3>
+<p>Iverson, Schilling and Vallance (1998) used dimensional reasoning and data from 27 lahar paths at nine volcanoes to propose that the maximum cross-sectional area A and the planimetric (map) inundated area B of a lahar both scale with V<sup>2/3</sup>:</p>
+<pre class="math">A = 0.05 V<sup>2/3</sup>        B = 200 V<sup>2/3</sup></pre>
+<p>The constants were calibrated statistically, and the method is implemented in the LAHARZ program used for volcanic hazard maps worldwide. Analogous relations with different coefficients were later proposed for non-volcanic debris flows and rock avalanches (Griswold and Iverson, 2008); for non-volcanic debris flows A = 0.1 V<sup>2/3</sup> and B = 20 V<sup>2/3</sup>, so a non-volcanic debris flow of a given volume has a thicker cross-section but inundates a smaller area than a lahar. The methods map inundation for a chosen range of volumes, so the hazard map is only as good as the volume–frequency relationship used to select them.</p>
+<h3>Numerical runout models</h3>
+<p>Depth-averaged (&quot;shallow-water&quot; or Savage–Hutter) models solve conservation of mass and momentum for a flowing layer whose thickness is small relative to its length, with a basal resistance law. Widely used codes include DAN and DAN3D (Hungr and McDougall), which use an equivalent-fluid approach with frictional, Voellmy or Bingham rheologies; RAMMS (developed at the WSL Institute for Snow and Avalanche Research SLF in Switzerland), which uses the Voellmy law; FLO-2D; and D-Claw (George and Iverson), a two-phase model that evolves solid concentration and pore pressure and can simulate the transition from slide to flow, entrainment and the generation of waves when landslides enter water. Models require high-resolution topography, typically from LiDAR, and calibrated parameters; uncertainty in source volume often dominates uncertainty in runout.</p>
+<h3>Fans and avulsion</h3>
+<p>On alluvial and debris-flow fans, flows leave confining channels when deposition at bends, bridges or culverts blocks them, and spread across the fan surface in unpredictable directions. Communities built on fans — Vargas in 1999, Montecito in 2018, many Alpine villages — face hazard throughout the fan, not just along the existing channel. Fan surfaces often contain evidence of past debris flows (levees, boulder lobes, buried soils datable by radiocarbon or dendrochronology) that allows frequency–magnitude relationships to be reconstructed.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Use LAHARZ to estimate A and B for a lahar of 10<sup>7</sup> m³.</div></li><li><span class="mk">(b)</span><div>A rock avalanche of 10<sup>9</sup> m³ detaches from a crown 1,500 m above the valley floor. Use Scheidegger's relation to estimate H/L and the horizontal runout L.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) V<sup>2/3</sup> = (10<sup>7</sup>)<sup>2/3</sup> ≈ 46,400 m²; A = 0.05 × 46,400 ≈ 2,300 m²; B = 200 × 46,400 ≈ 9.3 × 10<sup>6</sup> m² ≈ 9.3 km². (b) log<sub>10</sub>(H/L) = −0.15666 × 9 + 0.62419 = −0.786, so H/L ≈ 0.164 and L ≈ 1,500/0.164 ≈ 9.2 km. A frictional block with μ = 0.6 would travel only about 2.5 km.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-6.html">← Lesson 6</a><a class="btn" href="lesson-8.html">Lesson 8 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

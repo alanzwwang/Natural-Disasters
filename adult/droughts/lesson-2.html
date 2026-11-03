@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2: The Surface Energy and Water Balance and Evaporative Demand — Droughts (Advanced)</title>
+<meta name="description" content="Drought physics, evapotranspiration, drought indices, megadroughts, groundwater, famine risk and attribution.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html" class="active">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Droughts/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Droughts</a> › Lesson 2</p>
+    <h1>The Surface Energy and Water Balance and Evaporative Demand</h1>
+    <p class="kicker">Lesson 2 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Defining Drought and Its Propagation">1</a><a href="lesson-2.html" class="here" aria-current="page" title="Lesson 2: The Surface Energy and Water Balance and Evaporative Demand">2</a><a href="lesson-3.html" title="Lesson 3: Drought Indices and Their Calculation">3</a><a href="lesson-4.html" title="Lesson 4: Large-Scale Drivers — Ocean Modes, Ridges and Blocking">4</a><a href="lesson-5.html" title="Lesson 5: Land–Atmosphere Feedbacks and Flash Droughts">5</a><a href="lesson-6.html" title="Lesson 6: Hydrological Drought, Streamflow Sensitivity and Groundwater">6</a><a href="lesson-7.html" title="Lesson 7: Paleoclimate Reconstructions and Megadroughts">7</a><a href="lesson-8.html" title="Lesson 8: Impacts — Agriculture, Ecosystems, Food Security and Famine">8</a><a href="lesson-9.html" title="Lesson 9: Monitoring, Forecasting and Drought Management">9</a><a href="lesson-10.html" title="Lesson 10: Drought in a Changing Climate — Detection, Attribution and Open Questions">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">P = ET + Q + ΔS     and     R<sub>n</sub> − G = H + λE</pre></div>
+<h3>The two balances</h3>
+<p>Drought is fundamentally an imbalance between supply and demand at the land surface, and two conservation laws govern it. Over a control volume extending from the surface to below the root zone, the water balance states that precipitation P is partitioned into evapotranspiration ET, runoff and drainage Q, and change in storage ΔS (soil moisture, snow, groundwater). At the surface, the energy balance states that net radiation R<sub>n</sub>, less the ground heat flux G, is partitioned into sensible heat H and latent heat λE, where λ ≈ 2.45 MJ kg⁻¹ is the latent heat of vaporisation. The two balances are linked by evapotranspiration: every kilogram of water evaporated consumes λ of energy. When soil water is plentiful, much of the available energy goes to λE and the surface stays cool; when soil water runs out, energy is diverted to H, the surface and boundary layer warm, and the ratio H / λE — the Bowen ratio β — rises sharply. This switch is the physical basis for the strong coupling between drought and heatwaves discussed in Lesson 5.</p>
+<h3>Potential, reference and actual evapotranspiration</h3>
+<p>Potential evapotranspiration (PET) is the evapotranspiration that would occur from a surface with unlimited water supply under the prevailing meteorological conditions. Because PET depends on the surface, the FAO defines a standardised reference evapotranspiration ET₀ for a hypothetical well-watered grass crop 0.12 m tall with a fixed surface resistance of 70 s m⁻¹ and an albedo of 0.23 (Allen et al. 1998). Actual evapotranspiration ET falls below PET when soil moisture limits transpiration; crop evapotranspiration is approximated as ET<sub>c</sub> = K<sub>c</sub> · ET₀ with a crop coefficient K<sub>c</sub>, further reduced by a water-stress coefficient K<sub>s</sub> when the root zone dries. In energy-limited regimes ET ≈ PET; in water-limited regimes ET ≈ P over the long run, and the transition between them is described by the Budyko framework (Lesson 6).</p>
+<h3>The Penman–Monteith equation</h3>
+<p>The Penman–Monteith equation combines the energy balance with an aerodynamic description of vapour transport. In the FAO-56 form for daily reference evapotranspiration (mm day⁻¹):</p>
+<pre class="math">ET₀ = [0.408 Δ (R<sub>n</sub> − G) + γ · (900 / (T + 273)) · u₂ · (e<sub>s</sub> − e<sub>a</sub>)] / [Δ + γ (1 + 0.34 u₂)]</pre>
+<p>Here R<sub>n</sub> and G are in MJ m⁻² day⁻¹, T is the daily mean air temperature at 2 m (°C), u₂ the wind speed at 2 m (m s⁻¹), e<sub>s</sub> − e<sub>a</sub> the vapour-pressure deficit (kPa), Δ the slope of the saturation vapour-pressure curve (kPa °C⁻¹), and γ the psychrometric constant (≈ 0.0674 kPa °C⁻¹ at sea-level pressure of 101.3 kPa, from γ = 0.665 × 10⁻³ P). The factor 0.408 converts MJ m⁻² to mm of evaporated water (1/λ). The numerator contains a radiative term and an aerodynamic term: the first represents energy available for evaporation, the second the drying power of the air. The saturation vapour pressure is given by the Tetens-type expression used in FAO-56:</p>
+<pre class="math">e°(T) = 0.6108 · exp[17.27 T / (T + 237.3)]   kPa
+Δ = 4098 · e°(T) / (T + 237.3)²</pre>
+<h3>Vapour-pressure deficit and the thirsty atmosphere</h3>
+<p>The vapour-pressure deficit VPD = e<sub>s</sub> − e<sub>a</sub> measures how far the air is from saturation and is the most direct index of the atmosphere's evaporative demand. Because e<sub>s</sub> rises roughly exponentially with temperature — about 6–7 % per °C near typical surface temperatures, from the Clausius–Clapeyron relation — warming at constant relative humidity increases VPD in proportion to e<sub>s</sub>, and warming with falling relative humidity (as is observed over many continental regions) increases it faster still. High VPD has two opposing effects. It raises PET and can therefore deplete soil moisture faster, but it also causes plants to close their stomata to limit water loss, so actual transpiration may not rise and photosynthesis falls. Many recent studies identify VPD as a primary driver of drought-induced tree mortality, crop yield loss and fire weather, independent of precipitation. The phrase &quot;hot drought&quot; is used for droughts in which elevated temperature and VPD, rather than precipitation deficits alone, determine severity.</p>
+<h3>PET formulations and their pitfalls</h3>
+<p>Simpler temperature-based PET formulas (Thornthwaite 1948; Hargreaves) are attractive where radiation, humidity and wind data are lacking, but they assume that temperature is a proxy for energy availability. Under climate change that assumption fails: temperature-only formulas substantially overstate future increases in PET, and hence future drying, relative to the physically based Penman–Monteith formulation (Sheffield et al. 2012). Even Penman–Monteith PET is an imperfect measure of future drought because it holds surface resistance fixed, whereas rising atmospheric CO₂ tends to reduce stomatal conductance and increase plant water-use efficiency. This &quot;PET paradox&quot; — models projecting large increases in PET-based aridity while simulating little change or even increases in runoff in some regions — is an active research topic, and it is one reason the IPCC distinguishes between aridity indices and modelled soil moisture or runoff.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>At an air temperature of 30 °C and relative humidity of 30 %, calculate the saturation vapour pressure, the actual vapour pressure and the vapour-pressure deficit.</div></li><li><span class="mk">(b)</span><div>Calculate the FAO-56 ET₀ for a day with T = 25 °C, relative humidity 50 %, u₂ = 2.0 m s⁻¹, R<sub>n</sub> = 15 MJ m⁻² day⁻¹, G = 0 and sea-level pressure. Report the radiative and aerodynamic contributions separately.</div></li><li><span class="mk">(c)</span><div>Holding relative humidity at 50 %, by what percentage does VPD increase if the temperature rises from 25 °C to 27 °C?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) e<sub>s</sub> = 0.6108 exp(17.27 × 30 / 267.3) ≈ 4.24 kPa; e<sub>a</sub> = 0.30 × 4.24 ≈ 1.27 kPa; VPD ≈ 2.97 kPa. (b) e<sub>s</sub> = 3.17 kPa, e<sub>a</sub> = 1.58 kPa, Δ = 4098 × 3.17 / 262.3² ≈ 0.189 kPa °C⁻¹, γ = 0.0674 kPa °C⁻¹. Denominator = 0.189 + 0.0674 × 1.68 ≈ 0.302. Radiative term = 0.408 × 0.189 × 15 / 0.302 ≈ 3.83 mm day⁻¹; aerodynamic term = 0.0674 × (900/298) × 2 × 1.58 / 0.302 ≈ 2.14 mm day⁻¹; ET₀ ≈ 5.96 mm day⁻¹. (c) VPD rises from 1.58 to 1.78 kPa, an increase of about 12.6 %, i.e. about 6.3 % per °C at constant relative humidity.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-1.html">← Lesson 1</a><a class="btn" href="lesson-3.html">Lesson 3 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

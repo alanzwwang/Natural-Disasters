@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1: Convective Instability and Thunderstorm Types — Tornadoes (Advanced)</title>
+<meta name="description" content="Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html" class="active">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tornadoes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tornadoes</a> › Lesson 1</p>
+    <h1>Convective Instability and Thunderstorm Types</h1>
+    <p class="kicker">Lesson 1 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" class="here" aria-current="page" title="Lesson 1: Convective Instability and Thunderstorm Types">1</a><a href="lesson-2.html" title="Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity">2</a><a href="lesson-3.html" title="Lesson 3: Supercell Dynamics">3</a><a href="lesson-4.html" title="Lesson 4: Tornadogenesis — Theories and Open Questions">4</a><a href="lesson-5.html" title="Lesson 5: Non-Supercell Tornadoes">5</a><a href="lesson-6.html" title="Lesson 6: Tornado Vortex Dynamics and Wind Profiles">6</a><a href="lesson-7.html" title="Lesson 7: The Fujita and Enhanced Fujita Scales">7</a><a href="lesson-8.html" title="Lesson 8: Radar Observation of Tornadoes">8</a><a href="lesson-9.html" title="Lesson 9: Forecasting, Watches and Warnings">9</a><a href="lesson-10.html" title="Lesson 10: Climatology, Trends, Vulnerability and Engineering">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">CAPE = ∫ g (T<sub>vp</sub> − T<sub>ve</sub>) / T<sub>ve</sub> dz   from the LFC to the EL;   w<sub>max</sub> ≈ √(2 CAPE)</pre></div>
+<h3>Parcel theory and buoyancy</h3>
+<p>Almost all tornadoes are produced by deep moist convection, and deep convection requires three ingredients: a conditionally unstable lapse rate, sufficient low-level moisture, and a mechanism to lift air parcels to their level of free convection. Parcel theory treats a small, undiluted bubble of air lifted adiabatically through an environment that is assumed to be in hydrostatic balance and unaffected by the parcel. The parcel rises dry-adiabatically (about 9.8 K per km) until it saturates at the lifting condensation level (LCL), then moist-adiabatically (roughly 4–7 K per km in the lower troposphere, increasing aloft). Where the parcel becomes warmer than its surroundings — the level of free convection (LFC) — it begins to accelerate upward on its own, until it reaches the equilibrium level (EL), usually near the tropopause, where its temperature again equals that of the environment.</p>
+<p>The buoyancy acceleration of the parcel is B = g (T<sub>vp</sub> − T<sub>ve</sub>) / T<sub>ve</sub>, where T<sub>v</sub> is virtual temperature (which accounts for the lower density of moist air) and subscripts p and e denote parcel and environment. Integrating B with height gives two key quantities. Convective available potential energy (CAPE) is the positive area between the LFC and the EL; convective inhibition (CIN) is the negative area between the surface (or the parcel's origin) and the LFC. Both are energies per unit mass, in J/kg.</p>
+<pre class="math">CAPE = ∫<sub>LFC</sub><sup>EL</sup> g (T<sub>vp</sub> − T<sub>ve</sub>) / T<sub>ve</sub> dz
+CIN  = −∫<sub>z<sub>0</sub></sub><sup>LFC</sup> g (T<sub>vp</sub> − T<sub>ve</sub>) / T<sub>ve</sub> dz   (negative-area contribution only)</pre>
+<p>If all CAPE were converted to vertical kinetic energy, the maximum updraft speed would be w<sub>max</sub> = √(2 CAPE). For CAPE of 2,500 J/kg this is about 71 m/s. Observed updrafts in intense supercells reach 40–60 m/s, somewhat lower, because of entrainment of drier environmental air, the weight of condensate (water loading), and vertical perturbation pressure gradient forces that oppose buoyancy in wide updrafts. Nevertheless √(2 CAPE) is a useful upper bound, and it explains why large hail and overshooting tops accompany high-CAPE environments.</p>
+<h3>Choice of parcel and the lifted index</h3>
+<p>CAPE depends strongly on which parcel is lifted. Surface-based CAPE (sbCAPE) lifts the surface parcel; mixed-layer CAPE (mlCAPE) lifts a parcel with the mean properties of the lowest 100 hPa, which is more representative of what an updraft ingests in the afternoon; most-unstable CAPE (muCAPE) lifts the parcel with the highest equivalent potential temperature in the lowest 300 hPa, which captures elevated instability above a stable surface layer. For tornado forecasting the distinction matters: a storm feeding on elevated air above a cold, stable layer may produce hail but rarely tornadoes, because the air that would be stretched into a near-ground vortex is negatively buoyant.</p>
+<p>The lifted index (LI), one of the oldest stability indices (Galway, 1956), is the environmental temperature at 500 hPa minus the temperature of a parcel lifted to 500 hPa. Negative values indicate instability: LI of −3 to −6 °C is moderately unstable, below about −8 °C extremely unstable. LI samples only one level and is a crude proxy for CAPE, but it remains in operational use.</p>
+<h3>Convective inhibition and the capping inversion</h3>
+<p>CIN represents the work needed to lift a parcel to its LFC. A modest CIN (say 25–75 J/kg) is often favourable for significant severe weather because it suppresses widespread, disorganised convection and allows a few discrete storms to form where lifting is focused — along a dryline, a front, or an outflow boundary. In the US Great Plains, an elevated mixed layer of hot, dry air advected from the Mexican Plateau and the Rocky Mountains frequently forms a strong capping inversion (the &quot;lid&quot;) above a moist boundary layer from the Gulf of Mexico. This produces the combination of steep mid-level lapse rates and rich low-level moisture that yields CAPE values of 3,000–5,000 J/kg on major outbreak days. Large CIN (more than ~150–200 J/kg) generally prevents surface-based storms altogether.</p>
+<h3>Thunderstorm types</h3>
+<p>The organisation of deep convection is governed more by vertical wind shear than by buoyancy. In weak shear (0–6 km bulk wind difference below about 10 m/s), single-cell &quot;ordinary&quot; storms form; the precipitation-driven downdraft falls through and chokes off the updraft within 30–60 minutes. In moderate shear (roughly 10–20 m/s), the gust front repeatedly triggers new cells on its downshear or forward flank, producing multicell clusters and lines. When the 0–6 km bulk shear exceeds about 20 m/s (≈ 40 kt), a single quasi-steady, rotating updraft — a supercell — becomes possible, and supercells can persist for hours. A supercell is defined dynamically: it is a convective storm with a deep, persistent mesocyclone, that is, an updraft whose vertical vorticity is correlated with its vertical velocity.</p>
+<p>Weisman and Klemp (1982) used numerical simulations to show that the regime depends on the ratio of buoyancy to shear, which they expressed as a bulk Richardson number:</p>
+<pre class="math">BRN = CAPE / (½ U²)
+U = difference between the density-weighted mean wind over 0–6 km and the mean wind over 0–500 m
+BRN ≈ 10–50  →  supercells favoured;   BRN &gt; ~50  →  multicells favoured</pre>
+<p>Very low BRN (below about 10) indicates shear strong enough to tear apart weak updrafts. Modern practice generally prefers the 0–6 km bulk wind difference and the effective bulk wind difference (computed over the lower half of the storm's depth, starting at the base of the effective inflow layer) because they separate supercell and non-supercell environments more cleanly than BRN.</p>
+<h3>Supercell morphology</h3>
+<p>Supercells are commonly subdivided into classic, high-precipitation (HP) and low-precipitation (LP) types. Classic supercells display a hook echo on radar, a weak-echo region or bounded weak-echo region (BWER) where intense updraft lofts precipitation before it can grow to radar-detectable size, a forward-flank downdraft (FFD) beneath the main precipitation core, and a rear-flank downdraft (RFD) that wraps around the mesocyclone. HP supercells embed the mesocyclone in heavy rain, making visual identification of tornadoes very difficult; they are common in the moist southeastern United States. LP supercells, typical of the High Plains near the dryline, have sparse precipitation and striking visible structure but produce tornadoes less often.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A sounding has CAPE = 2,500 J/kg. Estimate the theoretical maximum updraft speed and comment on why observed updrafts are smaller.</div></li><li><span class="mk">(b)</span><div>Between an LFC at 2 km and an EL at 11 km a parcel is, on average, 3 K warmer (in virtual temperature) than an environment whose mean virtual temperature is 255 K. Estimate the CAPE.</div></li><li><span class="mk">(c)</span><div>For CAPE = 2,500 J/kg, compute BRN when U = 25 m/s and when U = 12 m/s. Which value lies in the supercell range of Weisman and Klemp?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) w<sub>max</sub> = √(2 × 2,500) = √5,000 ≈ 71 m/s. Entrainment, water loading and opposing perturbation pressure gradients reduce realised updrafts, typically to perhaps 50–80% of this value. (b) CAPE ≈ g ΔT<sub>v</sub> / T<sub>v</sub> × Δz = 9.81 × 3 / 255 × 9,000 m ≈ 1,040 J/kg. (c) With U = 25 m/s, ½U² = 312.5 m²/s², BRN = 2,500 / 312.5 = 8 (shear-dominated, at or below the low end of the supercell range). With U = 12 m/s, ½U² = 72 m²/s², BRN ≈ 35, squarely within the 10–50 supercell range.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="index.html">← Overview</a><a class="btn" href="lesson-2.html">Lesson 2 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

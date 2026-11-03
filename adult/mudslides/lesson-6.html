@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 6: Debris-Flow Mechanics and Rheology — Landslides and Debris Flows (Advanced)</title>
+<meta name="description" content="Landslides, mudflows and debris flows: soil mechanics, triggers, flow physics, runout, monitoring and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html" class="active">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Mudslides/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Landslides and Debris Flows</a> › Lesson 6</p>
+    <h1>Debris-Flow Mechanics and Rheology</h1>
+    <p class="kicker">Lesson 6 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Classification, Anatomy and Terminology">1</a><a href="lesson-2.html" title="Lesson 2: Effective Stress and Shear Strength">2</a><a href="lesson-3.html" title="Lesson 3: Slope Stability and the Factor of Safety">3</a><a href="lesson-4.html" title="Lesson 4: Rainfall, Snowmelt and Wildfire Triggers">4</a><a href="lesson-5.html" title="Lesson 5: Seismic, Volcanic and Anthropogenic Triggers">5</a><a href="lesson-6.html" class="here" aria-current="page" title="Lesson 6: Debris-Flow Mechanics and Rheology">6</a><a href="lesson-7.html" title="Lesson 7: Mobility, Runout and Inundation">7</a><a href="lesson-8.html" title="Lesson 8: Landslide Dams and Outburst Floods">8</a><a href="lesson-9.html" title="Lesson 9: Monitoring, Forecasting and Early Warning">9</a><a href="lesson-10.html" title="Lesson 10: Susceptibility, Hazard, Risk and Mitigation">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Bingham:  τ = τ<sub>y</sub> + μ<sub>B</sub> (du/dz)   for τ &gt; τ<sub>y</sub></pre></div>
+<h3>What makes debris flows distinctive</h3>
+<p>Debris flows are mixtures of poorly sorted sediment, from clay to boulders, and water, with solid volume fractions typically of 0.4–0.8 and bulk densities of about 1,800–2,300 kg/m³. They move as a series of surges whose fronts are steep, coarse-grained and relatively dry, followed by more fluid, finer-grained tails. They travel at speeds from about 1 to more than 20 m/s, deposit lobate snouts and lateral levees, and can move boulders several metres across. Their physics was long described by single-phase non-Newtonian models; since the 1990s it has increasingly been framed as a two-phase problem in which pore-fluid pressure controls the frictional resistance of the granular phase (Iverson, 1997).</p>
+<h3>Viscoplastic (Bingham) models</h3>
+<p>Johnson's (1970) pioneering work treated debris flows as Bingham plastics: the material does not deform until the shear stress exceeds a yield strength τ<sub>y</sub>, and above it the stress increases linearly with shear rate with plastic viscosity μ<sub>B</sub>. In steady uniform flow on a slope θ, the basal shear stress is ρ g h sin θ, so a layer can flow only if its thickness exceeds a critical value</p>
+<pre class="math">h<sub>c</sub> = τ<sub>y</sub> / (ρ g sin θ)</pre>
+<p>Above the depth at which the shear stress falls to τ<sub>y</sub>, a rigid plug rides on a shearing basal layer. The Bingham model explains why debris flows stop on finite slopes, why they leave deposits of finite thickness, and how large boulders can be supported in the matrix. Back-calculated yield strengths range from tens of pascals for muddy flows to more than 10<sup>4</sup> Pa for bouldery fronts, and apparent viscosities from about 10 to 10<sup>4</sup> Pa·s. O'Brien and Julien added turbulent and dispersive terms in a quadratic rheology used in the FLO-2D model.</p>
+<h3>Granular and two-phase models</h3>
+<p>Bagnold's (1954) experiments showed that in rapidly sheared concentrated suspensions grain collisions generate a dispersive pressure proportional to the square of the shear rate. Dimensionless numbers such as the Savage number (ratio of collisional to frictional stresses) and the Bagnold number (collisional to viscous stresses) help identify which mechanisms dominate. Iverson (1997) argued that in most natural debris flows Coulomb friction between grains, modulated by pore pressure, carries the bulk of the stress, with viscous and collisional stresses secondary. The key variable is then the ratio of basal pore pressure to total normal stress. In the fluid-rich body of a flow, pore pressure approaches the total normal stress and resistance is small; in the coarse, dilated front, pore pressure is low and resistance high. The bouldery front therefore acts as a moving dam pushed by the nearly liquefied body behind it, which explains the steep snout and the formation of levees as coarse grains are shouldered aside.</p>
+<p>Experiments in the USGS debris-flow flume — a 95 m long, 2 m wide concrete chute inclined at 31° in Oregon — have been central to this understanding. Excess pore pressure dissipates by diffusion over a timescale proportional to h²/D, where D is the hydraulic diffusivity of the mixture; in fine-grained, low-permeability flows high pore pressure persists for longer, explaining the high mobility of muddy debris flows and lahars.</p>
+<h3>Practical resistance laws</h3>
+<p>Depth-averaged hazard models commonly use the Voellmy law, borrowed from snow-avalanche science, in which basal resistance per unit area is</p>
+<pre class="math">τ<sub>b</sub> = μ σ<sub>n</sub> + ρ g u² / ξ</pre>
+<p>combining a Coulomb friction coefficient μ (typically 0.05–0.3) with a turbulence-like term whose coefficient ξ is typically 100–1,000 m/s². The parameters are calibrated by back-analysis of past events rather than measured directly, which is both the strength and the weakness of the approach.</p>
+<h3>Surges and roll waves</h3>
+<p>Debris flows commonly arrive as tens to hundreds of surges separated by seconds to minutes, even under steady water supply. Proposed mechanisms include roll-wave instability of flows on steep slopes, intermittent damming and breaching of channels by coarse fronts, and episodic bank collapse. Because peak discharge in a surge can be many times the mean discharge, surging greatly increases impact forces and the overtopping of channels.</p>
+<h3>Entrainment and growth</h3>
+<p>Debris flows commonly grow by eroding bed and bank material: a flow that starts as a 10<sup>3</sup> m³ landslide may reach 10<sup>5</sup> m³ or more at the fan. Large flume experiments by Iverson et al. (2011) showed that when the bed is wet, entrainment is accompanied by rising pore pressure in the bed sediment, so the flow gains both mass and momentum and becomes faster; when the bed is dry, entrainment slows the flow. This positive feedback helps explain why debris flows during prolonged wet weather are so destructive.</p>
+<h3>Velocity and discharge from field evidence</h3>
+<p>After an event, peak velocity is often estimated from the superelevation of the flow surface at channel bends. Treating the flow as a forced vortex, v ≈ √(g R Δh / (k b)), where R is the radius of curvature of the bend centreline, Δh the difference in mud-line elevation between the outer and inner banks, b the flow width and k a correction factor (often taken as 1, though back-calculated values up to about 10 have been reported). Peak discharge correlates with total event volume V; Rickenmann (1999) proposed Q<sub>p</sub> ≈ 0.1 V<sup>0.833</sup> (Q<sub>p</sub> in m³/s, V in m³) for granular debris flows. Impact pressures on structures are commonly estimated as p ≈ a ρ v² with a dimensionless coefficient a of roughly 1.5–5, plus the concentrated forces of boulder impacts.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A debris flow with yield strength τ<sub>y</sub> = 1,500 Pa and density 2,000 kg/m³ reaches a fan sloping at 10°. Below what thickness will it stop?</div></li><li><span class="mk">(b)</span><div>Mud lines at a bend of radius 50 m are 2 m higher on the outer bank in a channel 10 m wide. Estimate the peak velocity with k = 1.</div></li><li><span class="mk">(c)</span><div>Estimate the peak discharge of a 50,000 m³ granular debris flow with Rickenmann's relation.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) h<sub>c</sub> = 1,500/(2,000 × 9.81 × sin 10°) = 1,500/(2,000 × 9.81 × 0.1736) ≈ 0.44 m. (b) v = √(9.81 × 50 × 2/10) = √98.1 ≈ 9.9 m/s, about 36 km/h. (c) Q<sub>p</sub> = 0.1 × 50,000<sup>0.833</sup> ≈ 0.1 × 8,200 ≈ 820 m³/s — comparable with a large river flood, from a channel only a few metres wide, which is why debris flows overwhelm culverts and bridges.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-5.html">← Lesson 5</a><a class="btn" href="lesson-7.html">Lesson 7 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

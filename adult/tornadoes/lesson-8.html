@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 8: Radar Observation of Tornadoes — Tornadoes (Advanced)</title>
+<meta name="description" content="Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html" class="active">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tornadoes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tornadoes</a> › Lesson 8</p>
+    <h1>Radar Observation of Tornadoes</h1>
+    <p class="kicker">Lesson 8 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Convective Instability and Thunderstorm Types">1</a><a href="lesson-2.html" title="Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity">2</a><a href="lesson-3.html" title="Lesson 3: Supercell Dynamics">3</a><a href="lesson-4.html" title="Lesson 4: Tornadogenesis — Theories and Open Questions">4</a><a href="lesson-5.html" title="Lesson 5: Non-Supercell Tornadoes">5</a><a href="lesson-6.html" title="Lesson 6: Tornado Vortex Dynamics and Wind Profiles">6</a><a href="lesson-7.html" title="Lesson 7: The Fujita and Enhanced Fujita Scales">7</a><a href="lesson-8.html" class="here" aria-current="page" title="Lesson 8: Radar Observation of Tornadoes">8</a><a href="lesson-9.html" title="Lesson 9: Forecasting, Watches and Warnings">9</a><a href="lesson-10.html" title="Lesson 10: Climatology, Trends, Vulnerability and Engineering">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">v<sub>N</sub> = λ·PRF / 4,   r<sub>max</sub> = c / (2·PRF)   →   v<sub>N</sub> r<sub>max</sub> = cλ / 8 (the Doppler dilemma)</pre></div>
+<h3>Doppler radar principles</h3>
+<p>A Doppler weather radar measures the phase shift between successive pulses scattered by hydrometeors and debris, giving the radial (along-beam) component of target velocity. The maximum unambiguous velocity (Nyquist velocity) and the maximum unambiguous range trade off against each other through the pulse repetition frequency: for the US WSR-88D (an S-band radar, λ ≈ 10–11 cm), a PRF of 1,000 Hz gives v<sub>N</sub> ≈ 27 m/s and r<sub>max</sub> = 150 km. Velocities larger than v<sub>N</sub> are aliased (folded) and must be unfolded by algorithms or by eye. The WSR-88D network (about 160 radars, deployed 1990–1997 and upgraded to dual polarization in 2011–2013) has a half-power beamwidth of about 0.95°.</p>
+<h3>Beam geometry</h3>
+<p>Two geometric facts limit tornado detection. First, the beam rises above the ground with range because of its elevation angle and Earth's curvature; with the standard 4/3-Earth-radius refraction model:</p>
+<pre class="math">h = √(r² + R'² + 2 r R' sin θ) − R',   R' = (4/3) × 6,371 km ≈ 8,495 km</pre>
+<p>At 100 km range the centre of the 0.5° beam is about 1.5 km above the radar level, so shallow circulations and the near-ground tornado itself are not sampled. Second, the beam broadens linearly with range (≈ r × beamwidth in radians), reaching about 1.7 km at 100 km — far wider than most tornadoes. Velocity extremes are therefore smoothed, and a tornado appears as a strong &quot;gate-to-gate&quot; shear signature rather than a resolved vortex. Mobile radars (e.g. Doppler on Wheels, RaXPol) deployed a few kilometres from tornadoes, with beamwidths of 0.9–1.0°, achieve resolution of tens of metres, which is how the highest tornado wind speeds have been measured.</p>
+<h3>Reflectivity signatures</h3>
+<p>Classic supercells display a hook or appendage echo on the rear flank, wrapping around the mesocyclone, a weak-echo region or BWER beneath the overhanging precipitation aloft where the updraft is strongest, and, in strong tornadoes, a &quot;debris ball&quot; — a small, roughly circular area of high reflectivity at the hook tip produced by lofted debris. In very intense tornadoes, a radial &quot;debris spike&quot; of spurious echo can appear down-range of the debris ball, caused by multiple scattering (three-body-type and multipath effects) from the dense debris cloud, as in the Mayfield 2021 tornado.</p>
+<h3>Velocity signatures</h3>
+<p>In storm-relative velocity, a mesocyclone appears as an azimuthally adjacent pair of inbound (negative, towards the radar) and outbound (positive) velocities — a couplet — with cyclonic sense (outbound to the right when looking from the radar). The rotational velocity is commonly defined as</p>
+<pre class="math">V<sub>rot</sub> = (V<sub>max,out</sub> − V<sub>max,in</sub>) / 2,   with inbound velocities negative</pre>
+<p>and azimuthal shear as ΔV / D, where D is the distance between the extremes. A tornadic vortex signature (TVS) is an intense, gate-to-gate (adjacent azimuths) couplet, typically extending through several elevation angles; the original TVS was identified by NSSL in the 1973 Union City, Oklahoma, tornado. Studies of thousands of WSR-88D tornado cases (e.g. Smith et al., 2015) show that the probability of a given EF rating increases strongly with low-level V<sub>rot</sub>, conditioned on range and the near-storm environment; such relationships underpin modern warning decision guidance.</p>
+<h3>Dual-polarization signatures</h3>
+<p>Dual-polarization radars transmit and receive both horizontally and vertically polarised waves, yielding differential reflectivity (Z<sub>DR</sub>), the co-polar correlation coefficient (ρ<sub>hv</sub>) and specific differential phase (K<sub>DP</sub>). Hydrometeors have ρ<sub>hv</sub> close to 1 (above ~0.97 for rain); debris — irregular, randomly oriented and of mixed composition — has much lower values. The tornadic debris signature (TDS) (Ryzhkov et al., 2005) is a localised region of high reflectivity (typically &gt; 40–45 dBZ), low ρ<sub>hv</sub> (often &lt; 0.8–0.9) and near-zero or negative Z<sub>DR</sub>, collocated with a strong velocity couplet. A TDS confirms that a tornado is in progress and lofting debris, often at night or in rain-wrapped situations where spotters cannot see it. The height to which debris is lofted correlates broadly with tornado intensity. Other dual-pol features in supercells include the Z<sub>DR</sub> arc along the forward-flank reflectivity gradient (indicating size sorting by strong storm-relative helicity) and the Z<sub>DR</sub> column (a column of large raindrops lofted above the melting level, marking the updraft).</p>
+<h3>Emerging technologies</h3>
+<p>Rapid-update scanning (SAILS and MESO-SAILS, which insert extra low-level scans), phased-array radars that scan volumes in about one minute, gap-filling X-band networks (e.g. CASA), and rapid-scan mobile radars are improving temporal resolution, which matters because tornadogenesis can occur within the 4–5 minutes of a conventional volume scan. The US is planning a successor to the WSR-88D network, likely based on phased-array technology.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>An S-band radar has λ = 10.7 cm. Compute v<sub>N</sub> and r<sub>max</sub> for PRF = 1,000 Hz and the product v<sub>N</sub> r<sub>max</sub>.</div></li><li><span class="mk">(b)</span><div>Compute the height of the 0.5° beam centre and the beam width at 100 km range (beamwidth 0.95°).</div></li><li><span class="mk">(c)</span><div>A couplet has a maximum outbound velocity of +45 m/s and a maximum inbound of −40 m/s, 1 km apart. Compute V<sub>rot</sub> and the azimuthal shear.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) v<sub>N</sub> = 0.107 × 1,000 / 4 ≈ 26.8 m/s; r<sub>max</sub> = 3 × 10<sup>8</sup> / 2,000 = 150 km; v<sub>N</sub> r<sub>max</sub> = cλ/8 ≈ 4.0 × 10<sup>6</sup> m²/s. Doubling PRF doubles v<sub>N</sub> but halves r<sub>max</sub>. (b) h = √(r² + R'² + 2rR' sin 0.5°) − R' ≈ 1.46 km; beam width ≈ 100 km × 0.95° × π/180 ≈ 1.66 km. (c) V<sub>rot</sub> = (45 − (−40)) / 2 = 42.5 m/s; azimuthal shear = 85 / 1,000 = 0.085 s<sup>−1</sup> — an intense, likely tornadic circulation at that range.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-7.html">← Lesson 7</a><a class="btn" href="lesson-9.html">Lesson 9 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

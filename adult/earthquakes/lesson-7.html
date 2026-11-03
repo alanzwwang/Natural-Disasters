@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 7: Strong Ground Motion, Site Effects and Intensity — Earthquakes (Advanced)</title>
+<meta name="description" content="Fault mechanics, seismic waves, magnitude and moment, earthquake statistics, seismic hazard and engineering.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html" class="active">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Earthquakes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Earthquakes</a> › Lesson 7</p>
+    <h1>Strong Ground Motion, Site Effects and Intensity</h1>
+    <p class="kicker">Lesson 7 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Plate Tectonics and the Seismic Cycle">1</a><a href="lesson-2.html" title="Lesson 2: Stress, Friction and Fault Mechanics">2</a><a href="lesson-3.html" title="Lesson 3: Seismic Waves, Earth Structure and Seismometry">3</a><a href="lesson-4.html" title="Lesson 4: Locating Earthquakes and Source Mechanisms">4</a><a href="lesson-5.html" title="Lesson 5: Magnitude, Seismic Moment and Energy">5</a><a href="lesson-6.html" title="Lesson 6: Earthquake Statistics, Aftershocks and Forecasting">6</a><a href="lesson-7.html" class="here" aria-current="page" title="Lesson 7: Strong Ground Motion, Site Effects and Intensity">7</a><a href="lesson-8.html" title="Lesson 8: Liquefaction, Landslides and Other Collateral Hazards">8</a><a href="lesson-9.html" title="Lesson 9: Probabilistic Seismic Hazard and Risk">9</a><a href="lesson-10.html" title="Lesson 10: Earthquake Engineering, Early Warning and Risk Reduction">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">A(f, r) ∝ S(f) · G(r) · exp[−π f r / (Q V<sub>S</sub>)] · Site(f) ;   f₀ = V<sub>S</sub> / (4H)</pre></div>
+<h3>Measures of ground motion</h3>
+<p>Engineers characterise shaking by peak ground acceleration (PGA), peak ground velocity (PGV) and peak ground displacement, by duration (for example the significant duration between 5 % and 95 % of Arias intensity) and, above all, by the response spectrum. The response spectrum is the peak response of a damped (usually 5 %) single-degree-of-freedom oscillator as a function of its natural period. The pseudo-spectral acceleration PSA(T) is what most building codes specify. The highest PGAs recorded exceed 2–4 g, for example about 2.7 g at Tsukidate during Tōhoku 2011 and about 1.8 g at Tarzana during Northridge 1994. Near-fault records often contain long-period velocity pulses of 1–2 m/s, caused by forward rupture directivity or by permanent fault displacement (fling step), and these are particularly damaging to flexible structures.</p>
+<h3>Ground-motion models</h3>
+<p>Ground-motion models (GMMs), also called ground-motion prediction equations, are regressions of large strong-motion databases, such as NGA-West2 with more than 20,000 records. They predict the median and the lognormal standard deviation of an intensity measure as a function of magnitude, distance, faulting style, the time-averaged shear-wave velocity in the top 30 m (V<sub>S30</sub>) and basin depth. A generic form is</p>
+<pre class="math">ln Y = f₁(M) + f₂(M) ln √(R² + h²) + f₃ R + f<sub>site</sub>(V<sub>S30</sub>) + ε σ<sub>ln Y</sub></pre>
+<p>The total standard deviation σ<sub>ln Y</sub> is typically 0.5–0.7. This aleatory scatter, corresponding to a factor of about 2 at one standard deviation, is a dominant contributor to hazard at long return periods. Attenuation combines geometric spreading with anelastic loss, described by the quality factor Q, which is frequency-dependent and often written Q(f) = Q₀f<sup>η</sup>. Near-site high-frequency loss is parameterised by κ, with spectral decay ∝ exp(−πκf). Stable continental regions such as eastern North America have high Q, so a given magnitude is felt over areas several times larger than in California.</p>
+<h3>Site amplification and basins</h3>
+<p>Seismic waves slow down as they enter soft near-surface layers. Conservation of energy flux then makes the amplitude grow roughly as the square root of the impedance ratio (ρV<sub>S</sub>) between rock and soil, and resonance develops at the fundamental frequency f₀ = V<sub>S</sub>/(4H) of a soft layer of thickness H. Sedimentary basins trap and focus surface waves, which lengthens the shaking. Building-code site classes follow V<sub>S30</sub>: in ASCE 7-16, class A is above 1,500 m/s, B is 760–1,500, C is 360–760, D is 180–360 and E is below 180 m/s, with class F reserved for liquefiable or sensitive soils. ASCE 7-22 adds intermediate classes. At high strains, soil behaves nonlinearly: stiffness drops and damping rises, so amplification of strong shaking is less than linear theory predicts and resonance shifts to longer periods. Mexico City in 1985, where lake clays with V<sub>S</sub> of only about 50–80 m/s amplified 2-second motions by large factors, is the classic example (see Case Studies).</p>
+<h3>Macroseismic intensity</h3>
+<p>Intensity scales classify the effects of shaking on people, objects and buildings at a given place. The Modified Mercalli Intensity scale (Wood and Neumann, 1931), with Roman numerals I–XII, is used in the Americas. The European Macroseismic Scale EMS-98 (Grünthal, 1998) explicitly accounts for building vulnerability classes and damage grades. The Japan Meteorological Agency scale (shindo) has ten levels, from 0 to 7 with 5 and 6 each divided into lower and upper, and has been computed instrumentally since 1996. Intensity is essential for historical earthquakes, where it is the only data, and for communicating with the public. Ground-motion-to-intensity conversion equations (for example Worden et al., 2012) link MMI to PGA and PGV. Crowd-sourced reports such as the USGS &quot;Did You Feel It?&quot; system now yield thousands of intensity observations within minutes. The USGS ShakeMap and PAGER systems combine instrumental, macroseismic and predicted data to estimate shaking, exposed population and likely fatalities within about 30 minutes of a significant earthquake.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A lake-clay deposit is 40 m thick with V<sub>S</sub> = 70 m/s over stiff material. Estimate its fundamental frequency and period, and suggest which building heights are most at risk (a rule of thumb for fundamental period is T ≈ 0.1 N seconds for an N-storey building).</div></li><li><span class="mk">(b)</span><div>Calculate the anelastic attenuation factor exp[−πfr/(QV<sub>S</sub>)] for f = 5 Hz, r = 100 km, Q = 500 and V<sub>S</sub> = 3.5 km/s.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) f₀ = 70/(4 × 40) ≈ 0.44 Hz, so T₀ ≈ 2.3 s. By the rule of thumb, buildings of roughly 15–25 storeys have T ≈ 1.5–2.5 s and could resonate. In practice, strong shaking lengthens building periods as stiffness degrades, so in Mexico City in 1985 the worst damage was in buildings of roughly 6–15 storeys, whose softened periods moved towards 2 s. (b) The exponent is π × 5 × 100/(500 × 3.5) ≈ 0.90, so the factor is e<sup>−0.90</sup> ≈ 0.41. About 60 % of the 5 Hz amplitude is lost to anelasticity, in addition to geometric spreading.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-6.html">← Lesson 6</a><a class="btn" href="lesson-8.html">Lesson 8 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "blurb": "Rainfall–runoff, hydrographs, open-channel hydraulics, flood frequency, defences, risk and climate change.",
+  "pics": [
+    {
+      "img": "img/adult/floods-1.jpg",
+      "alt": "False-colour satellite image of the flooded Mississippi and Missouri rivers north of St. Louis in 1993",
+      "caption": "False-colour satellite view of the northern St. Louis area during the Great Flood of 1993, near the confluence of the Missouri and Mississippi rivers. Flood water appears dark blue, vegetation green and urban areas pink.",
+      "title": "Saint Louis satellite photo of Great Flood.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Saint_Louis_satellite_photo_of_Great_Flood.jpg",
+      "license": "Public domain",
+      "artist": "NASA"
+    },
+    {
+      "img": "img/adult/floods-2.jpg",
+      "alt": "Two MODIS satellite images of Sindh, Pakistan, on 27 August 2021 and 27 August 2022, showing extensive flooding in 2022",
+      "caption": "Aqua/MODIS false-colour images (bands 7-2-1) of the lower Indus valley in Sindh on 27 August 2021 and 27 August 2022. In 2022 the monsoon floods spread across much of the plain west of the Indus, appearing dark and light blue.",
+      "title": "2022 Pakistan Floods - August 27, 2021 vs. August 27, 2022 in Sindh.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:2022_Pakistan_Floods_-_August_27,_2021_vs._August_27,_2022_in_Sindh.jpg",
+      "license": "Public domain",
+      "artist": "NASA Worldview (Aqua/MODIS imagery)"
+    }
+  ]
+}

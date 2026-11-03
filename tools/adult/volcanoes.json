@@ -1,0 +1,19 @@
+{
+  "blurb": "Magma genesis, fragmentation, eruption columns, volcanic hazards, monitoring, climate, aviation ash and risk.",
+  "pics": [
+    { "img": "img/adult/volcanoes-1.jpg",
+      "alt": "A huge grey eruption column rising above clouds and mountains, seen across a flat plain",
+      "caption": "The eruption column of Mount Pinatubo on 12 June 1991, three days before the climactic VEI 6 eruption, photographed from Clark Air Base. Forecasts and evacuations by PHIVOLCS and the USGS saved thousands of lives.",
+      "title": "Pinatubo91eruption plume.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Pinatubo91eruption_plume.jpg",
+      "license": "Public domain",
+      "artist": "Dave Harlow, USGS" },
+    { "img": "img/adult/volcanoes-2.jpg",
+      "alt": "Satellite radar interferogram draped on 3-D terrain, with concentric colour fringes and a cone-shaped plot of uplift",
+      "caption": "InSAR interferogram (1995–2001) of the Three Sisters volcanic centre, Oregon: each colour cycle is 28.3 mm of line-of-sight range change. The lower panel shows the cumulative range change: a broad bulge of roughly 10–13 cm of uplift from magma intrusion at depth, detected with no eruption.",
+      "title": "InSAR Volcano.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:InSAR_Volcano.jpg",
+      "license": "Public domain",
+      "artist": "C. W. Wicks Jr. et al., USGS" }
+  ]
+}

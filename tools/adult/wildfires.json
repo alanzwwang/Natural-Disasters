@@ -1,0 +1,19 @@
+{
+  "blurb": "Combustion, fuels and spread models, fire weather and danger rating, pyroconvection, the WUI, satellites and smoke.",
+  "pics": [
+    { "img": "img/adult/wildfires-1.jpg",
+      "alt": "Landsat 8 false-colour satellite image of boreal forest with an active fire front and burn scar beside a river at lower right",
+      "caption": "Landsat 8 OLI false-colour image (bands 7-5-3) acquired at 12:34 local time on 3 May 2016, the day the Horse River fire entered Fort McMurray, Alberta. Shortwave infrared shows the active fire fronts as red and the fresh burn scar as brown near the river at lower right, with white smoke drifting north.",
+      "title": "Mcmurray oli 2016124 swir lrg.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Mcmurray_oli_2016124_swir_lrg.jpg",
+      "license": "Public domain",
+      "artist": "NASA Earth Observatory / Landsat 8" },
+    { "img": "img/adult/wildfires-2.png",
+      "alt": "Satellite image of eastern Australia with red fire detections along the coast and smoke streaming over the Tasman Sea, labelled Brisbane, Sydney, Canberra and Mallacoota",
+      "caption": "Aqua MODIS true-colour image of eastern Australia on 7 December 2019 with MODIS and VIIRS active-fire detections overlaid in red. Fires burn along the Great Dividing Range from Queensland to New South Wales during the Black Summer, with smoke drifting over the Tasman Sea.",
+      "title": "2019-12-07 East Australian Fires Aqua MODIS-VIIRS-LABELS.png",
+      "page": "https://commons.wikimedia.org/wiki/File:2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png",
+      "license": "Public domain",
+      "artist": "NASA EOSDIS Worldview" }
+  ]
+}

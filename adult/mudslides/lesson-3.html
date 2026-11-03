@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3: Slope Stability and the Factor of Safety — Landslides and Debris Flows (Advanced)</title>
+<meta name="description" content="Landslides, mudflows and debris flows: soil mechanics, triggers, flow physics, runout, monitoring and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html" class="active">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Mudslides/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Landslides and Debris Flows</a> › Lesson 3</p>
+    <h1>Slope Stability and the Factor of Safety</h1>
+    <p class="kicker">Lesson 3 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Classification, Anatomy and Terminology">1</a><a href="lesson-2.html" title="Lesson 2: Effective Stress and Shear Strength">2</a><a href="lesson-3.html" class="here" aria-current="page" title="Lesson 3: Slope Stability and the Factor of Safety">3</a><a href="lesson-4.html" title="Lesson 4: Rainfall, Snowmelt and Wildfire Triggers">4</a><a href="lesson-5.html" title="Lesson 5: Seismic, Volcanic and Anthropogenic Triggers">5</a><a href="lesson-6.html" title="Lesson 6: Debris-Flow Mechanics and Rheology">6</a><a href="lesson-7.html" title="Lesson 7: Mobility, Runout and Inundation">7</a><a href="lesson-8.html" title="Lesson 8: Landslide Dams and Outburst Floods">8</a><a href="lesson-9.html" title="Lesson 9: Monitoring, Forecasting and Early Warning">9</a><a href="lesson-10.html" title="Lesson 10: Susceptibility, Hazard, Risk and Mitigation">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">FS = [c′ + (γ z cos²β − u) tan φ′] / (γ z sin β cos β)</pre></div>
+<h3>Definition of the factor of safety</h3>
+<p>The factor of safety FS is the ratio of the available shear strength to the shear stress required for equilibrium along a trial surface. FS = 1 marks limiting equilibrium; design codes commonly require FS ≥ 1.3–1.5 for permanent slopes under static conditions, with lower values accepted for temporary works or transient loads. Because strength parameters and pore pressures are uncertain, FS is better regarded as an index than as a literal margin; modern practice supplements it with the probability of failure or the reliability index.</p>
+<h3>The infinite-slope model</h3>
+<p>Many shallow landslides — the source of most debris flows — occur on a failure surface parallel to the ground surface at a depth z that is small compared with the slope length. Neglecting end effects, a column of soil of unit plan area on a slope of angle β has weight per unit area γ z cos β measured along the slope. Resolving forces on the basal plane gives a normal stress σ = γ z cos²β and a shear stress τ = γ z sin β cos β. Substituting into Mohr–Coulomb yields the equation above.</p>
+<p>For slope-parallel seepage with the water table at height m z above the failure plane (0 ≤ m ≤ 1), the pore pressure on the plane is u = m γ<sub>w</sub> z cos²β, and</p>
+<pre class="math">FS = c′/(γ z sin β cos β) + [1 − m γ<sub>w</sub>/γ] · tan φ′/tan β</pre>
+<p>Two limiting cases are instructive. For a dry cohesionless soil, FS = tan φ′/tan β: the slope stands at angles up to the friction angle, which is why talus slopes lie at 30–40°. For a fully saturated cohesionless soil with seepage at the surface (m = 1), FS = (γ′/γ<sub>sat</sub>) tan φ′/tan β, where γ′ = γ<sub>sat</sub> − γ<sub>w</sub> is the buoyant unit weight; since γ′/γ<sub>sat</sub> ≈ 0.5, saturated seepage roughly halves the stable slope gradient. This is the essence of rainfall-triggered shallow landsliding.</p>
+<p>Coupled with a hydrological model that predicts m from rainfall and topography, the infinite slope model underlies physically based regional models such as SHALSTAB (Montgomery and Dietrich, 1994), SINMAP and TRIGRS (Baum et al., 2008), which map the critical rainfall or the factor of safety across a digital elevation model.</p>
+<h3>Methods of slices</h3>
+<p>For deeper, curved or irregular surfaces the sliding mass is divided into vertical slices and equilibrium is applied to each. The problem is statically indeterminate, so every method makes assumptions about interslice forces. The ordinary method of slices (Fellenius) ignores interslice forces and satisfies only overall moment equilibrium; it is conservative and can be seriously inaccurate with high pore pressures. Bishop's simplified method (Bishop, 1955) assumes horizontal interslice forces and satisfies moment equilibrium for circular surfaces:</p>
+<pre class="math">FS = Σ { [c′ b + (W − u b) tan φ′] / m<sub>α</sub> } / Σ W sin α
+m<sub>α</sub> = cos α [1 + tan α tan φ′ / FS]</pre>
+<p>where W is slice weight, b slice width and α the inclination of the slice base. FS appears on both sides, so the equation is solved iteratively. Janbu's simplified method satisfies force equilibrium for non-circular surfaces; Spencer (1967) and Morgenstern–Price (1965) satisfy both force and moment equilibrium and are regarded as rigorous. For well-posed problems the rigorous methods typically agree within a few per cent. The critical surface, with the lowest FS, is found by searching many trial surfaces; in finite-element or finite-difference practice the strength reduction method lowers c′ and tan φ′ by a common factor until the model fails to converge, giving FS without assuming a surface.</p>
+<h3>Three-dimensional and probabilistic analysis</h3>
+<p>Two-dimensional analysis of the critical section is usually conservative, because three-dimensional end resistance is neglected, but it may be unconservative where the failure mass is narrow and pore pressures vary laterally. Probabilistic analysis treats c′, φ′, γ and u as random variables, often by Monte Carlo simulation, and reports the probability that FS &lt; 1. A slope with FS = 1.5 and highly uncertain strength may be less reliable than one with FS = 1.3 and tightly constrained strength, which is why the reliability index β<sub>R</sub> = (μ<sub>FS</sub> − 1)/σ<sub>FS</sub> is increasingly reported alongside FS.</p>
+<h3>Back-analysis</h3>
+<p>When a slope has failed, FS = 1 at the moment of failure provides a powerful constraint. Back-analysis assumes a pore-pressure distribution and solves for the strength that gives FS = 1, which is then used to design remediation. Because c′ and φ′ cannot both be found from one equation, back-analysis is normally performed for a range of plausible combinations, or c′ is set to zero for reactivated slides at residual strength.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A colluvial mantle lies on bedrock on a 35° slope, with the bedrock contact at a vertical depth z = 2 m. γ = 19 kN/m³, c′ = 5 kPa (roots and suction), φ′ = 33°. Compute FS for a dry profile (m = 0) and for full saturation with slope-parallel seepage (m = 1).</div></li><li><span class="mk">(b)</span><div>For the same slope, at roughly what value of m does FS fall to 1?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) γ z sin β cos β = 19 × 2 × 0.5736 × 0.8192 = 17.86 kPa, so the cohesion term is 5/17.86 = 0.280; tan φ′/tan β = 0.6494/0.7002 = 0.927. For m = 0, FS = 0.280 + 0.927 ≈ 1.21. For m = 1, the frictional term is multiplied by 1 − 9.81/19 = 0.484, giving FS = 0.280 + 0.449 ≈ 0.73 — failure. (b) Setting 0.280 + 0.927(1 − 0.516 m) = 1 gives m ≈ 0.43: the slope fails once the perched water table rises to a little under half the soil thickness.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-2.html">← Lesson 2</a><a class="btn" href="lesson-4.html">Lesson 4 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

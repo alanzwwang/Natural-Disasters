@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9: Detection, Mapping and Remote Sensing — Wildfires (Advanced)</title>
+<meta name="description" content="Combustion, fuels and spread models, fire weather and danger rating, pyroconvection, the WUI, satellites and smoke.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html" class="active">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Wildfires/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Wildfires</a> › Lesson 9</p>
+    <h1>Detection, Mapping and Remote Sensing</h1>
+    <p class="kicker">Lesson 9 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Combustion and Heat Transfer">1</a><a href="lesson-2.html" title="Lesson 2: Wildland Fuels and Fuel Moisture">2</a><a href="lesson-3.html" title="Lesson 3: Rate of Spread Models">3</a><a href="lesson-4.html" title="Lesson 4: Fireline Intensity, Flame Length and Crown Fire">4</a><a href="lesson-5.html" title="Lesson 5: Fire Weather and Topography">5</a><a href="lesson-6.html" title="Lesson 6: Fire Danger Rating Systems">6</a><a href="lesson-7.html" title="Lesson 7: Extreme Fire Behaviour, Pyroconvection and Spotting">7</a><a href="lesson-8.html" title="Lesson 8: The Wildland–Urban Interface and Structure Ignition">8</a><a href="lesson-9.html" class="here" aria-current="page" title="Lesson 9: Detection, Mapping and Remote Sensing">9</a><a href="lesson-10.html" title="Lesson 10: Fire Regimes, Management, Climate Change and Smoke">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">λ<sub>max</sub> = 2,898 µm·K / T: flames peak near 3–4 µm, the land near 10 µm; mid-infrared channels detect fire</pre></div>
+<h3>Physical basis</h3>
+<p>Wien's displacement law places the peak emission of a body at about 1,000 K near 2.9 µm, while the Earth's surface at about 300 K peaks near 9.7 µm. A sub-pixel fire covering only a small fraction of a pixel therefore raises the brightness temperature in a mid-infrared channel near 4 µm far more than in a thermal channel near 11 µm. Active fire algorithms exploit this contrast together with contextual tests against neighbouring pixels and masks for clouds, water, sun glint and hot bare ground.</p>
+<h3>Polar-orbiting and geostationary sensors</h3>
+<p>The MODIS instruments on NASA's Terra (launched 1999) and Aqua (2002) satellites provide global active-fire detections at about 1 km resolution several times a day (Giglio et al. 2003, 2016), and a long-running burned area product (MCD64A1). The VIIRS instruments on Suomi NPP (2011), NOAA-20 (2017) and NOAA-21 (2022) detect fires at 375 m resolution (Schroeder et al. 2014), sensitive enough to pick up fires of a few tens of square metres under good conditions. Geostationary sensors, including the Advanced Baseline Imager on NOAA's GOES-R series (GOES-16 from 2016), Himawari-8/9 over Asia and Australia and the Meteosat series, observe at 2 km resolution every 5–15 min and as often as every minute in mesoscale sectors, giving the timing of fire growth and pyroCb development. NASA's FIRMS system distributes detections in near real time. Landsat (30 m) and Sentinel-2 (10–20 m) map fire perimeters and severity, airborne infrared line scanners map perimeters at night for incident teams, and new constellations of small satellites aim to reduce detection latency to minutes.</p>
+<h3>Fire radiative power</h3>
+<p>Each detection carries an estimate of fire radiative power (FRP, MW), derived from the excess mid-infrared radiance. Integrating FRP over time gives fire radiative energy (FRE). Experiments by Wooster et al. (2005) showed that dry matter combustion is approximately proportional to FRE, with a factor of about 0.368 kg per MJ. FRP-based emissions underpin global systems such as the Copernicus Global Fire Assimilation System, while the Global Fire Emissions Database (GFED) uses burned area combined with biogeochemical modelling of fuel consumption.</p>
+<h3>Burned area and severity</h3>
+<p>Burn severity, the degree of change to vegetation and soil, is commonly mapped with the Normalized Burn Ratio,</p>
+<pre class="math">NBR = (NIR − SWIR) / (NIR + SWIR)</pre>
+<p>using near-infrared and shortwave-infrared (around 2.2 µm) reflectance. Healthy vegetation reflects strongly in the NIR and weakly in the SWIR; burned surfaces do the opposite. The difference between pre-fire and post-fire values, dNBR, and its relativised variants are calibrated against field plots using the Composite Burn Index (Key and Benson 2006). The US Monitoring Trends in Burn Severity (MTBS) programme maps all large US fires since 1984 with Landsat.</p>
+<h3>Detection on the ground and ignition sources</h3>
+<p>Lightning detection networks locate cloud-to-ground strikes and are used to anticipate &quot;holdover&quot; fires that smoulder for days before emerging. Networks of high-definition cameras on mountain tops, increasingly with automated smoke detection by machine vision, now supplement fire lookouts. Across most regions, human activity causes the majority of ignitions (for example about 84 % of US wildfires in 1992–2012 according to Balch and colleagues), but lightning causes most of the area burned in remote boreal forests.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Find the wavelength of peak emission for a flame at 1,000 K and for the land surface at 300 K.</div></li><li><span class="mk">(b)</span><div>A fire sustains an average FRP of 1,000 MW for 1 hour. Estimate the mass of dry fuel consumed.</div></li><li><span class="mk">(c)</span><div>Before a fire a pixel has NIR = 0.30 and SWIR = 0.12; afterwards NIR = 0.15 and SWIR = 0.25. Compute pre-fire NBR, post-fire NBR and dNBR.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) 2,898/1,000 ≈ 2.9 µm; 2,898/300 ≈ 9.7 µm. (b) FRE = 1,000 MW × 3,600 s = 3.6 × 10⁶ MJ; mass ≈ 0.368 × 3.6 × 10⁶ ≈ 1.32 × 10⁶ kg, about 1,300 t of dry matter. (c) Pre-fire NBR = 0.18/0.42 ≈ 0.43; post-fire NBR = −0.10/0.40 = −0.25; dNBR = 0.43 − (−0.25) ≈ 0.68 (often reported multiplied by 1,000, i.e. ≈ 680), in the high-severity range of commonly used thresholds.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-8.html">← Lesson 8</a><a class="btn" href="lesson-10.html">Lesson 10 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

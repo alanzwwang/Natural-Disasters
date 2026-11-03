@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2: Infiltration and Runoff Generation — Floods (Advanced)</title>
+<meta name="description" content="Rainfall–runoff, hydrographs, open-channel hydraulics, flood frequency, defences, risk and climate change.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html" class="active">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Floods/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Floods</a> › Lesson 2</p>
+    <h1>Infiltration and Runoff Generation</h1>
+    <p class="kicker">Lesson 2 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: The Hydrological Cycle and the Catchment Water Balance">1</a><a href="lesson-2.html" class="here" aria-current="page" title="Lesson 2: Infiltration and Runoff Generation">2</a><a href="lesson-3.html" title="Lesson 3: Hydrographs, the Unit Hydrograph and the Rational Method">3</a><a href="lesson-4.html" title="Lesson 4: Types of Floods and Their Generating Mechanisms">4</a><a href="lesson-5.html" title="Lesson 5: Open-Channel Hydraulics and Flood Routing">5</a><a href="lesson-6.html" title="Lesson 6: Flood Frequency Analysis">6</a><a href="lesson-7.html" title="Lesson 7: Forecasting and Warning">7</a><a href="lesson-8.html" title="Lesson 8: Levees, Dams and the Levee Effect">8</a><a href="lesson-9.html" title="Lesson 9: Flood Risk, Insurance and Floodplain Management">9</a><a href="lesson-10.html" title="Lesson 10: Floods in a Changing Climate">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Overland flow forms when rainfall exceeds infiltration capacity (Hortonian) or falls on already saturated ground (saturation excess)</pre></div>
+<h3>Infiltration capacity and Horton's equation</h3>
+<p>Infiltration is the entry of water through the soil surface. Its maximum rate under given conditions, the infiltration capacity f, declines during a storm as the near-surface soil wets up, pores fill and surface crusts form. Robert Horton described this decay empirically in the 1930s:</p>
+<pre class="math">f(t) = f<sub>c</sub> + (f<sub>0</sub> − f<sub>c</sub>) e<sup>−kt</sup></pre>
+<p>where f₀ is the initial capacity, f<sub>c</sub> the final, near-constant capacity (close to the saturated hydraulic conductivity) and k a decay constant. Integrating gives the cumulative infiltration F(t) = f<sub>c</sub> t + (f₀ − f<sub>c</sub>)(1 − e<sup>−kt</sup>)/k. Typical values of f<sub>c</sub> range from more than 10 mm/h on sandy soils to below 1 mm/h on clays, while compacted, crusted or sealed urban surfaces approach zero.</p>
+<h3>The Green–Ampt model</h3>
+<p>A more physically based approach, due to Green and Ampt (1911), idealises the wetting front as a sharp boundary moving downward. If K<sub>s</sub> is the saturated hydraulic conductivity, ψ the suction head at the wetting front and Δθ the increase in volumetric water content, the infiltration rate is</p>
+<pre class="math">f = K<sub>s</sub> (1 + ψ Δθ / F)</pre>
+<p>so that f is very large when little water has entered (F small) and approaches K<sub>s</sub> as F grows. Green–Ampt parameters have been tabulated for soil texture classes and the model remains widely used in event-based modelling.</p>
+<h3>Two ways to make overland flow</h3>
+<p>Horton argued that storm runoff is produced when rainfall intensity exceeds infiltration capacity, so that the excess flows over the surface across the whole hillslope. Infiltration-excess (Hortonian) overland flow is indeed dominant on semi-arid hillslopes, on bare or crusted agricultural soils, on burned land after wildfire and in cities. Field work in humid, vegetated catchments in the 1960s and 1970s, however, found that such soils usually infiltrate rain faster than it falls. Hewlett and Hibbert (1967) proposed the variable source area concept, and Dunne and Black (1970) showed in Vermont that storm runoff came mostly from saturation-excess overland flow: rain falling on areas near streams and in hollows where the water table had risen to the surface, plus return flow of subsurface water emerging there. The contributing area expands and contracts with catchment wetness, which is the physical reason antecedent conditions matter so much. Subsurface stormflow through macropores and pipes, and the rapid displacement of stored &quot;old&quot; water (revealed by isotope tracers, which often show that most storm hydrograph water is pre-event water), complete the picture.</p>
+<h3>The SCS Curve Number method</h3>
+<p>Engineering practice frequently uses the empirical method developed by the US Soil Conservation Service (now the Natural Resources Conservation Service). Direct runoff depth Q is related to rainfall depth P by</p>
+<pre class="math">Q = (P − I<sub>a</sub>)² / (P − I<sub>a</sub> + S)      for P &gt; I<sub>a</sub>,     I<sub>a</sub> = 0.2 S,     S = 25400/CN − 254   (mm)</pre>
+<p>where S is a potential maximum retention and CN, the curve number (between about 30 and 100), is tabulated by soil group, land use and antecedent moisture condition. The method is simple, but it is not a physical model of infiltration, and the 0.2 ratio for initial abstraction is now regarded by many as too large; values near 0.05 fit many data sets better.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>A soil has Horton parameters f₀ = 75 mm/h, f<sub>c</sub> = 10 mm/h and k = 4 h⁻¹. What is the infiltration capacity after 30 minutes, and the cumulative infiltration capacity over the first hour?</div></li><li><span class="mk">(b)</span><div>Using the Curve Number method with CN = 80, how much direct runoff does a 100 mm storm produce?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) f(0.5 h) = 10 + 65 e<sup>−2</sup> = 10 + 8.8 ≈ 18.8 mm/h. F(1 h) = 10 × 1 + (65/4)(1 − e<sup>−4</sup>) = 10 + 16.25 × 0.982 ≈ 26.0 mm. Any rain arriving faster than these capacities becomes infiltration-excess runoff. (b) S = 25400/80 − 254 = 63.5 mm and I<sub>a</sub> = 12.7 mm, so Q = (100 − 12.7)²/(100 − 12.7 + 63.5) = 87.3²/150.8 ≈ 50.5 mm, a runoff coefficient of about 0.5 for this storm.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-1.html">← Lesson 1</a><a class="btn" href="lesson-3.html">Lesson 3 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

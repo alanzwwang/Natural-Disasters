@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 6: Tornado Vortex Dynamics and Wind Profiles — Tornadoes (Advanced)</title>
+<meta name="description" content="Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html" class="active">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tornadoes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tornadoes</a> › Lesson 6</p>
+    <h1>Tornado Vortex Dynamics and Wind Profiles</h1>
+    <p class="kicker">Lesson 6 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Convective Instability and Thunderstorm Types">1</a><a href="lesson-2.html" title="Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity">2</a><a href="lesson-3.html" title="Lesson 3: Supercell Dynamics">3</a><a href="lesson-4.html" title="Lesson 4: Tornadogenesis — Theories and Open Questions">4</a><a href="lesson-5.html" title="Lesson 5: Non-Supercell Tornadoes">5</a><a href="lesson-6.html" class="here" aria-current="page" title="Lesson 6: Tornado Vortex Dynamics and Wind Profiles">6</a><a href="lesson-7.html" title="Lesson 7: The Fujita and Enhanced Fujita Scales">7</a><a href="lesson-8.html" title="Lesson 8: Radar Observation of Tornadoes">8</a><a href="lesson-9.html" title="Lesson 9: Forecasting, Watches and Warnings">9</a><a href="lesson-10.html" title="Lesson 10: Climatology, Trends, Vulnerability and Engineering">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Cyclostrophic balance:  (1/ρ) ∂p/∂r = v²/r   →   Rankine core deficit Δp = ρ V<sub>max</sub>²</pre></div>
+<h3>Regions of the tornado flow</h3>
+<p>A mature tornado can be divided into several flow regions: (1) the outer region, in approximately cyclostrophic balance, where tangential wind decreases with radius roughly as 1/r; (2) the core, inside the radius of maximum wind (RMW), in near solid-body rotation; (3) the surface boundary layer, where friction disrupts cyclostrophic balance, so that the inward pressure gradient force is no longer balanced and air spirals strongly inward; (4) the corner flow region, where the inflowing boundary layer turns upward; and (5) the rising core flow aloft. Because the inflow layer is driven by a pressure gradient that is not balanced by centrifugal force, the corner region can contain the strongest winds anywhere in the vortex, often within the lowest 10–100 m. Mobile radar observations confirm that peak Doppler velocities in strong tornadoes are commonly found below about 100 m above ground.</p>
+<h3>Cyclostrophic balance and pressure</h3>
+<p>On the scale of a tornado the Rossby number is enormous (V/fL ~ 100 / (10<sup>−4</sup> × 100) ~ 10<sup>4</sup>), so Coriolis forces are negligible and the radial momentum equation outside the boundary layer reduces to cyclostrophic balance. Tornadoes may therefore rotate either way; however, because they derive their rotation from cyclonic mesocyclones, the great majority (well over 95% in the US) are cyclonic. Anticyclonic tornadoes occur, often as satellite tornadoes or in the anticyclonic shear region on the RFD gust front.</p>
+<p>The Rankine combined vortex is the simplest model:</p>
+<pre class="math">v(r) = V<sub>max</sub> r / R      for r ≤ R     (solid-body core)
+v(r) = V<sub>max</sub> R / r      for r &gt; R     (potential vortex)
+p(∞) − p(R) = ½ ρ V<sub>max</sub>²;   p(R) − p(0) = ½ ρ V<sub>max</sub>²;   total Δp = ρ V<sub>max</sub>²</pre>
+<p>For V<sub>max</sub> = 90 m/s and ρ = 1.15 kg/m³, the central deficit is about 9,300 Pa (93 hPa). The largest in-situ pressure deficit measured in a tornado is about 100 hPa, recorded by a probe deployed by Tim Samaras in the Manchester, South Dakota, tornado of 24 June 2003, consistent with this order of magnitude.</p>
+<h3>The Burgers–Rott vortex</h3>
+<p>The Rankine vortex has a discontinuous vorticity profile. The Burgers–Rott vortex is an exact solution of the Navier–Stokes equations in which radial inflow (u = −ar) and axial stretching (w = 2az) balance viscous diffusion:</p>
+<pre class="math">v(r) = (Γ / 2πr) [1 − exp(−r²/r<sub>c</sub>²)],   r<sub>c</sub> = √(2ν/a)
+v<sub>max</sub> ≈ 0.638 Γ / (2π r<sub>c</sub>)   at r ≈ 1.12 r<sub>c</sub></pre>
+<p>Here ν is the (eddy) viscosity and a the strain rate. Doppler radar profiles of real tornadoes are often well fitted by a Burgers–Rott or modified Rankine profile v ∝ r<sup>−α</sup> outside the RMW with α ≈ 0.5–0.8 rather than 1, reflecting turbulence and the finite radar resolution.</p>
+<h3>Swirl ratio and vortex structure</h3>
+<p>Laboratory vortex chambers (Ward, 1972; Church et al., 1979) showed that tornado-like vortex structure is controlled largely by the swirl ratio, the ratio of angular momentum input to the volume flux through the updraft. One common definition is</p>
+<pre class="math">S = r<sub>0</sub> Γ<sub>∞</sub> / (2Q)    (r<sub>0</sub> = updraft radius, Γ<sub>∞</sub> = ambient circulation, Q = volume flow rate)</pre>
+<p>At low swirl ratio the vortex is narrow, laminar and single-celled (rising motion throughout the core). As S increases, a vortex breakdown — an abrupt transition to a wider, turbulent vortex with a central downdraft — forms aloft and descends; when it reaches the surface the vortex becomes two-celled, with a downdraft in the core and an annulus of rising air. At still higher swirl ratio the two-celled vortex becomes unstable and splits into two, three or more secondary vortices rotating around the parent vortex. In Church et al.'s apparatus, the breakdown reached the surface at S of roughly 0.45 and multiple vortices appeared for S of order 1, but these thresholds depend on the apparatus and the definition used. Fujita's aerial surveys of cycloidal &quot;suction swath&quot; marks in crop fields, especially after the 1974 Super Outbreak, provided the first convincing evidence of multiple-vortex structure in nature; mobile radars have since resolved subvortices directly (e.g. in El Reno 2013).</p>
+<h3>Translation and near-ground winds</h3>
+<p>Ground-relative winds combine rotation and translation. On the right side of a cyclonic tornado (relative to its motion), the translation speed adds to the rotational wind; on the left side it subtracts. Subvortices add a third component: a subvortex of 30–40 m/s rotating within a parent of 60 m/s, itself translating at 20 m/s, can produce very short-lived gusts above 110 m/s along narrow swaths, which explains the abrupt transitions from total destruction to minor damage seen in many surveys. Debris loading near the ground reduces the effective wind but greatly increases damage potential through impact.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Using the Rankine model, estimate the central pressure deficit for V<sub>max</sub> = 90 m/s and ρ = 1.15 kg/m³. What fraction of this deficit occurs outside the RMW?</div></li><li><span class="mk">(b)</span><div>A Burgers–Rott vortex has r<sub>c</sub> = 100 m and v<sub>max</sub> = 80 m/s. Find the radius of maximum wind and the circulation Γ far from the axis.</div></li><li><span class="mk">(c)</span><div>A tornado with a peak rotational wind of 70 m/s translates at 20 m/s. Estimate the ground-relative peak winds on its right and left sides.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) Δp = ρ V<sub>max</sub>² = 1.15 × 8,100 ≈ 9,300 Pa ≈ 93 hPa; half (about 47 hPa) occurs between infinity and R and half inside the core. (b) RMW ≈ 1.12 × 100 m ≈ 112 m; Γ = 2π r<sub>c</sub> v<sub>max</sub> / 0.638 = 2π × 100 × 80 / 0.638 ≈ 7.9 × 10<sup>4</sup> m²/s. (c) Right side ≈ 70 + 20 = 90 m/s; left side ≈ 70 − 20 = 50 m/s. The asymmetry is why damage intensity is often greater on the right side of the track.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-5.html">← Lesson 5</a><a class="btn" href="lesson-7.html">Lesson 7 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

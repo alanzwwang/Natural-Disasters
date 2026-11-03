@@ -1,0 +1,23 @@
+{
+  "blurb": "Long-wave physics, sources, propagation, run-up, detection, warning and risk reduction for tsunamis.",
+  "pics": [
+    {
+      "img": "img/adult/tsunamis-1.png",
+      "alt": "NOAA model map of maximum tsunami amplitude across the Pacific Ocean after the 2011 Tōhoku earthquake",
+      "caption": "NOAA model of the maximum open-ocean amplitude of the 11 March 2011 Tōhoku tsunami, in centimetres; black triangles mark DART stations. Energy is beamed south-eastward, perpendicular to the rupture, and steered along ridges and seamount chains.",
+      "title": "2011Sendai-NOAA-Energy plot20110311.png",
+      "page": "https://commons.wikimedia.org/wiki/File:2011Sendai-NOAA-Energy_plot20110311.png",
+      "license": "Public domain",
+      "artist": "NOAA"
+    },
+    {
+      "img": "img/adult/tsunamis-2.jpg",
+      "alt": "Diagram of the DART II tsunami detection system with seafloor tsunameter, surface buoy and satellite link",
+      "caption": "The DART II system: a seafloor bottom-pressure recorder (tsunameter) at 1,000–6,000 m depth sends data by acoustic telemetry to a moored surface buoy, which relays them by Iridium satellite to tsunami warning centres.",
+      "title": "DART II System Diagram.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:DART_II_System_Diagram.jpg",
+      "license": "Public domain",
+      "artist": "Pacific Marine Environmental Laboratory (NOAA)"
+    }
+  ]
+}

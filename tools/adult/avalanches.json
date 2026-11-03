@@ -1,0 +1,23 @@
+{
+  "blurb": "Snow physics, slab fracture, avalanche dynamics, forecasting, defence structures and rescue at graduate level.",
+  "pics": [
+    {
+      "img": "img/adult/avalanches-1.jpg",
+      "alt": "Black-and-white photograph of smashed railway cars and uprooted tree trunks in avalanche debris at Wellington, Washington, 1910",
+      "caption": "Wreckage of a Great Northern Railway train in the debris of the 1 March 1910 avalanche at Wellington, Washington, which killed 96 people. Note the snapped conifer trunks carried in the debris.",
+      "title": "Train wreckage from Wellington WA avalanche cph.3b13980.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Train_wreckage_from_Wellington_WA_avalanche_cph.3b13980.jpg",
+      "license": "Public domain",
+      "artist": "E. J. Frazier"
+    },
+    {
+      "img": "img/adult/avalanches-2.jpg",
+      "alt": "A person crouching in a snow pit, cutting a column of snow out of the pit wall",
+      "caption": "An observer in a snow pit isolates a column of snow from the pit wall to assess avalanche risk. Column tests of this kind (CT, ECT, PST) probe how easily a buried weak layer fails and whether a fracture propagates.",
+      "title": "Avalanche testing snow pit.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Avalanche_testing_snow_pit.JPG",
+      "license": "CC BY-SA 3.0",
+      "artist": "Clayoquot"
+    }
+  ]
+}

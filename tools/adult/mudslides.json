@@ -1,0 +1,23 @@
+{
+  "blurb": "Landslides, mudflows and debris flows: soil mechanics, triggers, flow physics, runout, monitoring and risk.",
+  "pics": [
+    {
+      "img": "img/adult/mudslides-1.jpg",
+      "alt": "Black-and-white photograph of the Vajont arch dam with the landslide mass filling the reservoir behind it, 1963",
+      "caption": "The Vajont dam, Italy, after the rockslide of 9 October 1963: about 270 million m³ of rock from Monte Toc filled the reservoir behind the dam. The arch dam survived, but the displaced water overtopped it and destroyed Longarone.",
+      "title": "Vajont Dam landslide.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Vajont_Dam_landslide.jpg",
+      "license": "Public domain",
+      "artist": "US Army"
+    },
+    {
+      "img": "img/adult/mudslides-2.jpg",
+      "alt": "Aerial view from offshore of the coastal bluff above La Conchita, California, with houses, a railway and Highway 101 at its foot",
+      "caption": "La Conchita, California, seen from offshore in 2009. The bluff above the town failed in 1995, and in January 2005 part of that landslide remobilised (about 200,000 m³), killing 10 people.",
+      "title": "LaConchitaLandslide.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:LaConchitaLandslide.jpg",
+      "license": "CC BY-SA 3.0",
+      "artist": "Antandrus"
+    }
+  ]
+}

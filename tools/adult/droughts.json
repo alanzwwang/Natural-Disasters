@@ -1,0 +1,13 @@
+{
+  "blurb": "Drought physics, evapotranspiration, drought indices, megadroughts, groundwater, famine risk and attribution.",
+  "pics": [
+    { "img": "img/adult/droughts-1.jpg", "alt": "Map of the western United States coloured by the 2002–2023 trend in groundwater storage, with the strongest losses in California's Central Valley",
+      "caption": "Groundwater storage trends across the western United States, 2002–2023, from GRACE and GRACE-FO satellite gravimetry, in centimetres of water equivalent per year. The deepest losses (dark red) lie beneath the southern Central Valley (San Joaquin and Tulare basins) of California, where drought-era pumping has drawn down aquifers.",
+      "title": "Groundwater grace 2002-2023 US Southwest.jpg", "page": "https://commons.wikimedia.org/wiki/File:Groundwater_grace_2002-2023_US_Southwest.jpg",
+      "license": "Public domain", "artist": "NASA Earth Observatory (Wanmei Liang)" },
+    { "img": "img/adult/droughts-2.png", "alt": "U.S. Drought Monitor map for 16 August 2022 showing D0 to D4 drought categories across the United States",
+      "caption": "The U.S. Drought Monitor for 16 August 2022, blending many indicators into categories D0 (abnormally dry) to D4 (exceptional drought). S and L labels mark short-term and long-term impacts; exceptional drought covers parts of the Far West and the southern Plains.",
+      "title": "20220816 United States drought conditions.png", "page": "https://commons.wikimedia.org/wiki/File:20220816_United_States_drought_conditions.png",
+      "license": "Public domain", "artist": "National Drought Mitigation Center, USDA, NOAA (author Richard Tinker, NOAA CPC)" }
+  ]
+}

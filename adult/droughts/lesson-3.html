@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3: Drought Indices and Their Calculation — Droughts (Advanced)</title>
+<meta name="description" content="Drought physics, evapotranspiration, drought indices, megadroughts, groundwater, famine risk and attribution.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html" class="active">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Droughts/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Droughts</a> › Lesson 3</p>
+    <h1>Drought Indices and Their Calculation</h1>
+    <p class="kicker">Lesson 3 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Defining Drought and Its Propagation">1</a><a href="lesson-2.html" title="Lesson 2: The Surface Energy and Water Balance and Evaporative Demand">2</a><a href="lesson-3.html" class="here" aria-current="page" title="Lesson 3: Drought Indices and Their Calculation">3</a><a href="lesson-4.html" title="Lesson 4: Large-Scale Drivers — Ocean Modes, Ridges and Blocking">4</a><a href="lesson-5.html" title="Lesson 5: Land–Atmosphere Feedbacks and Flash Droughts">5</a><a href="lesson-6.html" title="Lesson 6: Hydrological Drought, Streamflow Sensitivity and Groundwater">6</a><a href="lesson-7.html" title="Lesson 7: Paleoclimate Reconstructions and Megadroughts">7</a><a href="lesson-8.html" title="Lesson 8: Impacts — Agriculture, Ecosystems, Food Security and Famine">8</a><a href="lesson-9.html" title="Lesson 9: Monitoring, Forecasting and Drought Management">9</a><a href="lesson-10.html" title="Lesson 10: Drought in a Changing Climate — Detection, Attribution and Open Questions">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">SPI = Φ⁻¹[ F<sub>Γ</sub>(P<sub>k</sub>) ]    — a precipitation total mapped to a standard normal deviate</pre></div>
+<h3>Why indices</h3>
+<p>A drought index condenses a complex multivariate anomaly into a single number that can be compared across places and times and tied to management triggers. The WMO's Handbook of Drought Indicators and Indices (WMO and GWP 2016) catalogues more than fifty. No index is universally best; each represents a particular storage and time scale, and good practice combines several. The key design choices are which variables are used (precipitation only, a water balance, soil moisture, vegetation), which accumulation period is considered, and how anomalies are standardised so that a given value means the same probability everywhere.</p>
+<h3>The Standardized Precipitation Index</h3>
+<p>The Standardized Precipitation Index (McKee, Doesken and Kleist 1993) is the WMO-recommended index for meteorological drought (Lincoln Declaration on Drought Indices, 2009). For a chosen accumulation period k (commonly 1, 3, 6, 12, 24 or 48 months), precipitation totals ending in each calendar month are fitted, separately for each month, with a two-parameter gamma distribution, which suits the positively skewed, bounded-at-zero nature of precipitation. A mixed distribution accounts for zero totals. The cumulative probability of an observed total is then transformed to the equiprobable standard normal deviate:</p>
+<pre class="math">H(x) = q + (1 − q) · G(x),   SPI = Φ⁻¹[H(x)]</pre>
+<p>where q is the probability of zero precipitation and G the fitted gamma CDF. By construction SPI has mean 0 and unit variance at every location. The McKee classes are: −1.00 to −1.49 moderately dry, −1.50 to −1.99 severely dry, and ≤ −2.00 extremely dry, which correspond to probabilities of roughly 9.2 %, 4.4 % and 2.3 % respectively; P(SPI ≤ −1) ≈ 15.9 %. Short-window SPI (1–3 months) tracks soil moisture and agricultural conditions; long-window SPI (12–48 months) tracks reservoirs and groundwater. Its advantages are simplicity, spatial comparability and multi-scalar flexibility. Its main weakness is that it ignores evaporative demand, so it cannot capture a drought intensified by heat, and its tails are sensitive to the record length and fitting method — at least 30 years of data are recommended, and extreme values beyond about ±3 are poorly constrained.</p>
+<h3>The Standardized Precipitation Evapotranspiration Index</h3>
+<p>The SPEI (Vicente-Serrano, Beguería and López-Moreno 2010) applies the same multi-scalar standardisation to the climatic water balance D = P − PET accumulated over k months. Because D can be negative, a three-parameter distribution is used (log-logistic in the original formulation). SPEI therefore responds to temperature and VPD as well as precipitation, which makes it better suited to studying warming-driven drought, but its results depend on the PET formula: with Thornthwaite PET the index can exaggerate trends, and the Penman–Monteith form is now recommended where data allow.</p>
+<h3>The Palmer Drought Severity Index</h3>
+<p>Palmer's (1965) index was the first comprehensive water-balance drought index and remained the backbone of US drought monitoring for decades. It runs a two-layer soil bucket model (total available water capacity often set to about 25 mm in the surface layer plus a location-dependent amount below) with Thornthwaite PET. For each month it computes the precipitation that would have been &quot;climatically appropriate for existing conditions&quot; (CAFEC), from which the moisture departure d = P − P̂ is derived and weighted by a climatic characteristic K to give the moisture anomaly index Z = K · d. The PDSI is then built recursively, giving the index memory:</p>
+<pre class="math">X<sub>i</sub> = 0.897 X<sub>i−1</sub> + Z<sub>i</sub> / 3</pre>
+<p>Values of −2.0 to −2.99 indicate moderate drought, −3.0 to −3.99 severe drought, and −4.0 or below extreme drought. The coefficients 0.897 and 1/3 were derived empirically from limited data in central Iowa and western Kansas, so the original PDSI is not spatially comparable — a −4 in one climate is not equally rare in another. The self-calibrating PDSI (sc-PDSI; Wells, Goddard and Hayes 2004) recalculates K and the duration factors from each station's own record. Further limitations include the fixed time scale (roughly 9–12 months of memory), the neglect of snow and frozen ground in the original, and an arbitrary backtracking procedure for deciding when a drought began or ended. Nevertheless, the PDSI's long history makes it invaluable for climate studies, and it is the target variable of most tree-ring drought reconstructions (Lesson 7).</p>
+<h3>Soil-moisture, vegetation and evaporative indices</h3>
+<p>Soil moisture is the most direct measure of agricultural drought but is sparsely observed in situ. It is estimated by land-surface models (for example the North American Land Data Assimilation System), by microwave satellites (ESA SMOS since 2009, NASA SMAP since 2015, which sense roughly the top 5 cm), and by combining both via data assimilation. Root-zone moisture from GRACE-assimilating models extends the view deeper. Vegetation-based indices use optical remote sensing. The Normalized Difference Vegetation Index NDVI = (ρ<sub>NIR</sub> − ρ<sub>red</sub>) / (ρ<sub>NIR</sub> + ρ<sub>red</sub>) exploits the strong near-infrared reflectance of healthy leaves. Kogan's Vegetation Condition Index scales NDVI by its historical range at each pixel for the same period of year, and the Temperature Condition Index does likewise for brightness temperature, inverted; the Vegetation Health Index averages the two:</p>
+<pre class="math">VCI = 100 · (NDVI − NDVI<sub>min</sub>) / (NDVI<sub>max</sub> − NDVI<sub>min</sub>)
+TCI = 100 · (BT<sub>max</sub> − BT) / (BT<sub>max</sub> − BT<sub>min</sub>)
+VHI = α · VCI + (1 − α) · TCI,   commonly α = 0.5</pre>
+<p>VCI below about 35–40 is commonly taken to indicate drought stress. Vegetation indices integrate the actual biological response, but they lag the onset of stress and confound drought with pests, fire, land-use change and cloud contamination. The Evaporative Stress Index (Anderson et al.) uses thermal-infrared estimates of actual ET relative to reference ET and can detect stress before vegetation visibly browns, which makes it useful for flash-drought detection. Solar-induced chlorophyll fluorescence, now retrieved from several satellites, offers a still more direct measure of photosynthetic activity.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>At a station, three-month precipitation totals ending in August are approximately normally distributed with mean 150 mm and standard deviation 40 mm. This year the June–August total is 70 mm. Estimate SPI-3, classify the anomaly and estimate its return period for that season.</div></li><li><span class="mk">(b)</span><div>The PDSI for May is −1.5. The moisture anomaly index Z is −2.0 in June, −3.0 in July and −1.0 in August. Compute PDSI for June, July and August and classify August.</div></li><li><span class="mk">(c)</span><div>A pixel's NDVI for the current dekad is 0.32, while its historical minimum and maximum for this dekad are 0.25 and 0.65. Compute the VCI.</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) z = (70 − 150)/40 = −2.0, an extremely dry anomaly; P(Z ≤ −2) ≈ 0.0228, so the return period for that season is about 1/0.0228 ≈ 44 years. (In practice a gamma fit would be used; the normal approximation is shown for clarity.) (b) June: 0.897 × (−1.5) + (−2.0/3) ≈ −2.01. July: 0.897 × (−2.01) − 1.00 ≈ −2.80. August: 0.897 × (−2.80) − 0.33 ≈ −2.85, a moderate drought — note that the index barely recovers despite a milder August because of its memory. (c) VCI = 100 × (0.32 − 0.25)/(0.65 − 0.25) = 17.5, indicating severe vegetation stress.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-2.html">← Lesson 2</a><a class="btn" href="lesson-4.html">Lesson 4 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

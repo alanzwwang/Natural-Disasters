@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity — Tornadoes (Advanced)</title>
+<meta name="description" content="Supercell dynamics, tornado vortex physics, Doppler radar, EF-scale damage assessment, forecasting and risk.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html" class="active">Tornadoes</a>
+      <a href="../floods/index.html">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Tornadoes/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Tornadoes</a> › Lesson 2</p>
+    <h1>Vertical Wind Shear, Hodographs and Storm-Relative Helicity</h1>
+    <p class="kicker">Lesson 2 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: Convective Instability and Thunderstorm Types">1</a><a href="lesson-2.html" class="here" aria-current="page" title="Lesson 2: Vertical Wind Shear, Hodographs and Storm-Relative Helicity">2</a><a href="lesson-3.html" title="Lesson 3: Supercell Dynamics">3</a><a href="lesson-4.html" title="Lesson 4: Tornadogenesis — Theories and Open Questions">4</a><a href="lesson-5.html" title="Lesson 5: Non-Supercell Tornadoes">5</a><a href="lesson-6.html" title="Lesson 6: Tornado Vortex Dynamics and Wind Profiles">6</a><a href="lesson-7.html" title="Lesson 7: The Fujita and Enhanced Fujita Scales">7</a><a href="lesson-8.html" title="Lesson 8: Radar Observation of Tornadoes">8</a><a href="lesson-9.html" title="Lesson 9: Forecasting, Watches and Warnings">9</a><a href="lesson-10.html" title="Lesson 10: Climatology, Trends, Vulnerability and Engineering">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">SRH = −∫<sub>0</sub><sup>h</sup> k · [(V − c) × ∂V/∂z] dz   — the streamwise vorticity available to a moving storm</pre></div>
+<h3>The hodograph</h3>
+<p>A hodograph is the curve traced by the tips of the horizontal wind vectors at successive heights, plotted from a common origin in (u, v) space. Its geometry encodes the vertical wind shear: the shear vector over any layer is the segment joining the two heights on the hodograph, and its length is the bulk wind difference. A straight hodograph means unidirectional shear (the shear vector does not change direction with height), even if the wind itself veers. A hodograph that curves clockwise with height (in the Northern Hemisphere) is associated with a veering wind profile and, as shown below, strongly favours cyclonically rotating, right-moving supercells. The archetypal tornado hodograph has a large, clockwise-curved segment in the lowest 1–3 km and long straight segments above.</p>
+<h3>Horizontal vorticity from shear</h3>
+<p>Vertical wind shear is equivalent to horizontal vorticity. For a wind V(z) = (u(z), v(z)), the horizontal vorticity vector is ω<sub>h</sub> = (−∂v/∂z, ∂u/∂z); it points 90° to the left of the shear vector. A westerly wind increasing by 10 m/s per km produces horizontal vorticity of 0.01 s<sup>−1</sup> pointing northward. In a typical tornadic environment the low-level shear alone represents horizontal vorticity of 0.01–0.03 s<sup>−1</sup>, which is comparable to or larger than the vertical vorticity of a mesocyclone. The central dynamical question of supercells is how this horizontal vorticity is reoriented into the vertical.</p>
+<h3>Storm motion and the Bunkers method</h3>
+<p>What matters for a moving storm is not the ground-relative wind but the storm-relative wind V − c, where c is storm motion. Supercells deviate from the mean wind because of dynamic pressure effects on their flanks (Lesson 3). Bunkers et al. (2000) proposed an empirical, Galilean-invariant method that is now standard. The right-moving and left-moving supercell motions are:</p>
+<pre class="math">c<sub>RM</sub> = V<sub>mean</sub> + D (S × k) / |S|
+c<sub>LM</sub> = V<sub>mean</sub> − D (S × k) / |S|
+V<sub>mean</sub> = non-pressure-weighted mean wind over 0–6 km
+S = shear vector from the 0–500 m mean wind to the 5.5–6 km mean wind
+D = 7.5 m/s</pre>
+<p>Here S × k with S = (S<sub>x</sub>, S<sub>y</sub>) is the vector (S<sub>y</sub>, −S<sub>x</sub>), which points 90° to the right of the shear. Typical errors of this technique are about 4–5 m/s, mostly due to storm interactions with boundaries and outflow.</p>
+<h3>Streamwise vorticity and helicity</h3>
+<p>The component of horizontal vorticity parallel to the storm-relative inflow is called streamwise vorticity; the perpendicular component is crosswise vorticity. Air parcels with purely crosswise vorticity, entering an updraft, are tilted so as to produce a pair of counter-rotating vortices on either flank of the updraft, with the updraft maximum lying between them — vorticity and vertical velocity are uncorrelated. Air with purely streamwise vorticity, by contrast, is tilted so that the rotating air coincides with the rising air: the updraft as a whole rotates. Davies-Jones (1984) formalised this, showing that the correlation between updraft and vertical vorticity is governed by the streamwise vorticity of the storm-relative inflow. This is the physical reason supercells occur in sheared environments with curved hodographs.</p>
+<p>The integrated measure is storm-relative helicity (SRH), defined above, which equals −2 times the signed area swept out on the hodograph by the storm-relative wind vectors between the surface and height h. For discrete wind observations at levels n = 0 … N it can be computed as:</p>
+<pre class="math">SRH = Σ<sub>n</sub> [ (u<sub>n+1</sub> − c<sub>x</sub>)(v<sub>n</sub> − c<sub>y</sub>) − (u<sub>n</sub> − c<sub>x</sub>)(v<sub>n+1</sub> − c<sub>y</sub>) ]</pre>
+<p>Positive SRH favours cyclonic (right-moving) supercells in the Northern Hemisphere. Operationally, SRH is computed over 0–1 km and 0–3 km and over the &quot;effective inflow layer&quot; (the contiguous layer in which lifted parcels have CAPE ≥ 100 J/kg and CIN &gt; −250 J/kg). Rough guidance: 0–3 km SRH of 150–250 m²/s² supports supercells; 0–1 km SRH above about 100–150 m²/s² is associated with an increasing likelihood of significant tornadoes. Research since about 2017 (e.g. Coffer and Parker, and Coffer et al.) suggests that streamwise vorticity and SRH in the lowest 500 m are better discriminators between tornadic and non-tornadic supercells than deeper layers, consistent with the idea that near-ground inflow controls the low-level mesocyclone.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>The 0–6 km mean wind is (15, 5) m/s and the Bunkers shear vector is S = (20, 10) m/s. Compute the right-mover motion.</div></li><li><span class="mk">(b)</span><div>Winds at 0, 1, 2 and 3 km are (5, 0), (10, 10), (15, 15) and (20, 15) m/s, and the storm moves at c = (12, 2) m/s. Compute 0–3 km SRH with the discrete formula and state which layer contributes most.</div></li><li><span class="mk">(c)</span><div>A westerly wind increases from 5 m/s at the surface to 25 m/s at 1 km. What is the magnitude and direction of the horizontal vorticity?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) |S| = √(20² + 10²) ≈ 22.36 m/s; S × k = (10, −20); unit vector (0.447, −0.894); times 7.5 gives (3.35, −6.71). So c<sub>RM</sub> ≈ (15 + 3.35, 5 − 6.71) = (18.4, −1.7) m/s. (b) Layer 0–1 km: (10 − 12)(0 − 2) − (5 − 12)(10 − 2) = 4 + 56 = 60. Layer 1–2 km: (15 − 12)(10 − 2) − (10 − 12)(15 − 2) = 24 + 26 = 50. Layer 2–3 km: (20 − 12)(15 − 2) − (15 − 12)(15 − 2) = 104 − 39 = 65. Total SRH ≈ 175 m²/s²; the 2–3 km layer contributes slightly the most, the 0–1 km layer nearly as much. (c) ∂u/∂z = 20 m/s per 1,000 m = 0.02 s<sup>−1</sup>; ω<sub>h</sub> = (0, 0.02) s<sup>−1</sup>, i.e. 0.02 s<sup>−1</sup> pointing north (90° to the left of the eastward shear).</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-1.html">← Lesson 1</a><a class="btn" href="lesson-3.html">Lesson 3 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>

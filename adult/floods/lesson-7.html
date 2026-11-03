@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 7: Forecasting and Warning — Floods (Advanced)</title>
+<meta name="description" content="Rainfall–runoff, hydrographs, open-channel hydraulics, flood frequency, defences, risk and climate change.">
+<link rel="stylesheet" href="../adult.css">
+</head>
+<body id="top" class="mode-adult">
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="../index.html">Natural Disasters · Advanced</a>
+    <nav class="site-nav" aria-label="Hazards">
+      <a href="../index.html">Home</a>
+      <a href="../volcanoes/index.html">Volcanoes</a>
+      <a href="../earthquakes/index.html">Earthquakes</a>
+      <a href="../tsunamis/index.html">Tsunamis</a>
+      <a href="../hurricanes/index.html">Cyclones</a>
+      <a href="../tornadoes/index.html">Tornadoes</a>
+      <a href="../floods/index.html" class="active">Floods</a>
+      <a href="../droughts/index.html">Droughts</a>
+      <a href="../wildfires/index.html">Wildfires</a>
+      <a href="../avalanches/index.html">Avalanches</a>
+      <a href="../mudslides/index.html">Landslides</a>
+    </nav>
+    <a class="mode-switch" href="../../Floods/facts-and-history.html">Switch to kid mode</a>
+  </div>
+</header>
+
+<section class="hero topic-hero">
+  <div class="container">
+    <p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Floods</a> › Lesson 7</p>
+    <h1>Forecasting and Warning</h1>
+    <p class="kicker">Lesson 7 of 10</p>
+  </div>
+</section>
+
+<main class="container">
+  <nav class="part-nav" aria-label="Parts of this course"><a href="index.html" title="Overview">Overview</a><a href="lesson-1.html" title="Lesson 1: The Hydrological Cycle and the Catchment Water Balance">1</a><a href="lesson-2.html" title="Lesson 2: Infiltration and Runoff Generation">2</a><a href="lesson-3.html" title="Lesson 3: Hydrographs, the Unit Hydrograph and the Rational Method">3</a><a href="lesson-4.html" title="Lesson 4: Types of Floods and Their Generating Mechanisms">4</a><a href="lesson-5.html" title="Lesson 5: Open-Channel Hydraulics and Flood Routing">5</a><a href="lesson-6.html" title="Lesson 6: Flood Frequency Analysis">6</a><a href="lesson-7.html" class="here" aria-current="page" title="Lesson 7: Forecasting and Warning">7</a><a href="lesson-8.html" title="Lesson 8: Levees, Dams and the Levee Effect">8</a><a href="lesson-9.html" title="Lesson 9: Flood Risk, Insurance and Floodplain Management">9</a><a href="lesson-10.html" title="Lesson 10: Floods in a Changing Climate">10</a><a href="case-studies.html" title="Case Studies">Case studies</a><a href="references.html" title="References">References</a></nav>
+  <article class="lesson"><div class="box key"><p class="box-title">Key idea of this section</p><pre class="math">Lead time is the value of a forecast: detection → forecast → warning → response, and any broken link defeats the system</pre></div>
+<h3>The forecasting chain</h3>
+<p>Operational flood forecasting couples a meteorological forecast of precipitation and temperature to a hydrological model of runoff generation and a hydraulic model of routing, updated continuously with observations. For large rivers, most of the useful lead time comes from rain that has already fallen and from routing: a crest observed upstream can be propagated downstream days in advance. For flash floods, lead time must come from the atmosphere itself, and is limited to minutes or hours.</p>
+<h3>Observing precipitation</h3>
+<p>Weather radar estimates rainfall from reflectivity Z (mm⁶/m³, usually expressed as dBZ = 10 log₁₀ Z) through an empirical Z–R relationship, the classic Marshall–Palmer form being</p>
+<pre class="math">Z = 200 R<sup>1.6</sup>        (R in mm/h)</pre>
+<p>Radar estimates suffer from beam blockage, bright-band contamination, attenuation and variation in drop-size distribution; dual-polarisation radar, now standard in the United States and much of Europe, improves estimates and identifies hail and debris. Radar is merged with gauges and, over data-sparse regions, with satellite products. Gauge networks remain sparse in much of the world, which is one reason flood risk in Africa and South Asia is so hard to manage.</p>
+<h3>Models and ensembles</h3>
+<p>Hydrological models range from lumped conceptual models (for example the Sacramento Soil Moisture Accounting model, HBV, GR4J) to distributed physically based models. The US National Water Model, operational since 2016, simulates streamflow on some 2.7 million river reaches. At continental and global scales, the European Flood Awareness System (EFAS) and the Global Flood Awareness System (GloFAS), run under the Copernicus Emergency Management Service, use ensemble weather forecasts to produce probabilistic flood forecasts days to weeks ahead. Ensembles express forecast uncertainty and allow decision thresholds to be set by cost–loss reasoning: if the cost of protective action is C and the avoidable loss is L, action is rational when the forecast probability exceeds C/L.</p>
+<h3>Flash-flood guidance and nowcasting</h3>
+<p>Flash Flood Guidance, used in the United States and in many countries through WMO's Flash Flood Guidance System, estimates the rainfall over a given duration needed to bring small streams to bankfull, given current soil moisture; forecasters compare it with observed and nowcast rainfall. Radar-based nowcasting extrapolates storm motion over 0–3 hours. Systems such as the US Multi-Radar Multi-Sensor product and the FLASH framework provide distributed estimates of flash-flood potential at high resolution.</p>
+<h3>Verification and the human link</h3>
+<p>Forecasts are verified with contingency statistics: the probability of detection POD = a/(a + c), the false alarm ratio FAR = b/(a + b) and the critical success index CSI = a/(a + b + c), where a, b and c are hits, false alarms and misses. Repeated false alarms erode trust, but the deadliest failures are usually in communication rather than in physics. In July 2021, EFAS issued flood notifications for the Rhine tributaries days before the disaster, yet in parts of the Ahr valley warnings did not reach residents in a form that prompted evacuation in time. Impact-based warnings, which describe what a flood will do rather than how high a river will rise, and cell-broadcast alerts to mobile phones (introduced in Germany in 2023) are responses to such failures. The UN Early Warnings for All initiative, launched in 2022, aims for universal coverage of early-warning systems by 2027.</p>
+<div class="box turn"><p class="box-title">Exercise</p><ul class="steps"><li><span class="mk">(a)</span><div>Convert radar reflectivities of 40 and 45 dBZ to rainfall rates using Z = 200 R<sup>1.6</sup>.</div></li><li><span class="mk">(b)</span><div>Over a season a warning service records 18 hits, 12 false alarms and 6 misses. Compute POD, FAR and CSI.</div></li><li><span class="mk">(c)</span><div>Moving equipment out of a factory costs €20,000 and avoids a loss of €200,000 if the factory floods. Above what forecast probability is moving the equipment worthwhile?</div></li></ul><details><summary>Show solution</summary><div class="answers"><p><strong>Answers</strong>: (a) 40 dBZ: Z = 10⁴, R = (10⁴/200)<sup>1/1.6</sup> = 50<sup>0.625</sup> ≈ 11.5 mm/h. 45 dBZ: Z ≈ 31,600, R = (158)<sup>0.625</sup> ≈ 23.7 mm/h; an increase of 5 dBZ roughly doubles the estimated rate. (b) POD = 18/24 = 0.75; FAR = 12/30 = 0.40; CSI = 18/36 = 0.50. (c) Act when p &gt; C/L = 20,000/200,000 = 0.1, i.e. when the probability exceeds 10%.</p></div></details></div></article>
+  <nav class="pager" aria-label="Next and previous"><a class="btn ghost" href="lesson-6.html">← Lesson 6</a><a class="btn" href="lesson-8.html">Lesson 8 →</a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Natural Disasters · Advanced Edition · 10 hazards</p>
+    <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+  </div>
+</footer>
+<div id="page-version" aria-label="Page version" style="position:fixed;left:8px;bottom:6px;z-index:2147483647;pointer-events:none;font:700 11px/1 system-ui,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:6px;opacity:.8">V.1.6</div>
+<!-- WHATS-NEW:START -->
+<script src="../../whats-new.js" defer></script>
+<!-- WHATS-NEW:END -->
+</body>
+</html>
